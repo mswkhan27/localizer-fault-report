@@ -28,11 +28,12 @@
 <!-- 1&#45;&gt;2 -->
 <g id="edge1" class="edge">
 <title>1&#45;&gt;2</title>
-<path fill="none" stroke="green" d="M139.4,-169.18C139.4,-153.19 139.4,-132.47 139.4,-113.64"/>
-<polygon fill="green" stroke="green" points="142.9,-113.73 139.4,-103.73 135.9,-113.73 142.9,-113.73"/>
+<path fill="none" stroke="#429e6a" d="M139.4,-169.18C139.4,-153.19 139.4,-132.47 139.4,-113.64"/>
+<polygon fill="#429e6a" stroke="#429e6a" points="142.9,-113.73 139.4,-103.73 135.9,-113.73 142.9,-113.73"/>
 <text text-anchor="middle" x="190.4" y="-138.08" font-family="Times New Roman,serif" font-size="14.00">&quot;type_code &gt;= 0&quot;</text>
 <text text-anchor="middle" x="190.4" y="-122.33" font-family="Times New Roman,serif" font-size="14.00">c[3]</text>
-<text text-anchor="start" x="122.15" y="-138.18" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">1,0</text>
+<polygon fill="white" stroke="none" points="108.4,-137.73 108.4,-161.48 137.4,-161.48 137.4,-137.73 108.4,-137.73"/>
+<text text-anchor="start" x="112.4" y="-144.18" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">1, 0</text>
 </g>
 </g>
 </svg>

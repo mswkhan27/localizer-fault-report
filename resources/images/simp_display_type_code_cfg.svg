@@ -32,7 +32,8 @@
 <text text-anchor="middle" x="104.74" y="-131.56" font-family="Times New Roman,serif" font-size="14.00">n</text>
 <text text-anchor="middle" x="104.74" y="-115.81" font-family="Times New Roman,serif" font-size="14.00">c[1]</text>
 <text text-anchor="middle" x="104.74" y="-100.06" font-family="Times New Roman,serif" font-size="14.00"> Score: 0.57</text>
-<text text-anchor="start" x="53.74" y="-123.5" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">4,4</text>
+<polygon fill="white" stroke="none" points="39.99,-123.05 39.99,-146.8 68.99,-146.8 68.99,-123.05 39.99,-123.05"/>
+<text text-anchor="start" x="43.99" y="-129.5" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">4, 4</text>
 </g>
 </g>
 </svg>

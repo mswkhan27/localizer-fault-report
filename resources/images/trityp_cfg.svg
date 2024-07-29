@@ -31,7 +31,8 @@
 <polygon fill="black" stroke="black" points="167.23,-1411.73 164.48,-1401.5 160.25,-1411.21 167.23,-1411.73"/>
 <text text-anchor="middle" x="273.04" y="-1539.96" font-family="Times New Roman,serif" font-size="14.00">&quot;i == 0 or j == 0 or k == 0&quot;</text>
 <text text-anchor="middle" x="273.04" y="-1524.21" font-family="Times New Roman,serif" font-size="14.00">c[5]</text>
-<text text-anchor="start" x="151.27" y="-1498.29" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">0,0</text>
+<polygon fill="white" stroke="none" points="137.52,-1497.84 137.52,-1521.59 166.52,-1521.59 166.52,-1497.84 137.52,-1497.84"/>
+<text text-anchor="start" x="141.52" y="-1504.29" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">0, 0</text>
 </g>
 <!-- 4 -->
 <g id="node3" class="node">
@@ -49,7 +50,8 @@
 <text text-anchor="middle" x="476.91" y="-1547.84" font-family="Times New Roman,serif" font-size="14.00">&quot;(not (i == 0 or j == 0 or k == 0))&quot;</text>
 <text text-anchor="middle" x="476.91" y="-1532.09" font-family="Times New Roman,serif" font-size="14.00">c[6]</text>
 <text text-anchor="middle" x="476.91" y="-1516.34" font-family="Times New Roman,serif" font-size="14.00"> Score: 0.57</text>
-<text text-anchor="start" x="358.94" y="-1529.31" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">4,4</text>
+<polygon fill="white" stroke="none" points="353.07,-1516.86 353.07,-1540.61 382.07,-1540.61 382.07,-1516.86 353.07,-1516.86"/>
+<text text-anchor="start" x="357.07" y="-1523.31" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">4, 4</text>
 </g>
 <!-- 3 -->
 <g id="node4" class="node">
@@ -63,7 +65,8 @@
 <title>2&#45;&gt;3</title>
 <path fill="none" stroke="black" d="M165.51,-1343.48C163.51,-1319.42 161.04,-1283.43 161.04,-1252.03 161.04,-1252.03 161.04,-1252.03 161.04,-154.43 161.04,0.89 -304.22,-183.46 548.04,-77.75 624.07,-68.32 710.72,-58.63 773.04,-51.84"/>
 <polygon fill="black" stroke="black" points="773.32,-55.33 782.88,-50.77 772.57,-48.37 773.32,-55.33"/>
-<text text-anchor="start" x="530.79" y="-80.2" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">0,0</text>
+<polygon fill="white" stroke="none" points="517.04,-79.75 517.04,-103.5 546.04,-103.5 546.04,-79.75 517.04,-79.75"/>
+<text text-anchor="start" x="521.04" y="-86.2" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">0, 0</text>
 </g>
 <!-- 5 -->
 <g id="node5" class="node">
@@ -75,11 +78,12 @@
 <!-- 4&#45;&gt;5 -->
 <g id="edge4" class="edge">
 <title>4&#45;&gt;5</title>
-<path fill="none" stroke="green" d="M395.04,-1417.45C395.04,-1393.13 395.04,-1361.78 395.04,-1337.44"/>
-<polygon fill="green" stroke="green" points="398.54,-1337.63 395.04,-1327.63 391.54,-1337.63 398.54,-1337.63"/>
+<path fill="none" stroke="#429e6a" d="M395.04,-1417.45C395.04,-1393.13 395.04,-1361.78 395.04,-1337.44"/>
+<polygon fill="#429e6a" stroke="#429e6a" points="398.54,-1337.63 395.04,-1327.63 391.54,-1337.63 398.54,-1337.63"/>
 <text text-anchor="middle" x="416.04" y="-1374.27" font-family="Times New Roman,serif" font-size="14.00">&quot;i == j&quot;</text>
 <text text-anchor="middle" x="416.04" y="-1358.52" font-family="Times New Roman,serif" font-size="14.00">c[7]</text>
-<text text-anchor="start" x="377.79" y="-1374.04" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">1,0</text>
+<polygon fill="white" stroke="none" points="364.04,-1373.59 364.04,-1397.34 393.04,-1397.34 393.04,-1373.59 364.04,-1373.59"/>
+<text text-anchor="start" x="368.04" y="-1380.04" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">1, 0</text>
 </g>
 <!-- 6 -->
 <g id="node6" class="node">
@@ -95,14 +99,16 @@
 <polygon fill="blue" stroke="blue" stroke-width="3.52" points="631.86,-1248.42 628.01,-1238.55 624.86,-1248.67 631.86,-1248.42"/>
 <text text-anchor="middle" x="660.79" y="-1300.41" font-family="Times New Roman,serif" font-size="14.00">&quot;(i != j)&quot;</text>
 <text text-anchor="middle" x="660.79" y="-1284.66" font-family="Times New Roman,serif" font-size="14.00"> Score: 0.63</text>
-<text text-anchor="start" x="553.55" y="-1371.89" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">3,4</text>
+<polygon fill="white" stroke="none" points="539.8,-1371.44 539.8,-1395.19 568.8,-1395.19 568.8,-1371.44 539.8,-1371.44"/>
+<text text-anchor="start" x="543.8" y="-1377.89" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">3, 4</text>
 </g>
 <!-- 5&#45;&gt;6 -->
 <g id="edge6" class="edge">
 <title>5&#45;&gt;6</title>
-<path fill="none" stroke="green" d="M467.81,-1271.46C504.37,-1258.66 547.57,-1243.52 579.59,-1232.3"/>
-<polygon fill="green" stroke="green" points="580.71,-1235.62 588.99,-1229.01 578.39,-1229.01 580.71,-1235.62"/>
-<text text-anchor="start" x="512.23" y="-1252.31" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">1,0</text>
+<path fill="none" stroke="#429e6a" d="M467.81,-1271.46C504.37,-1258.66 547.57,-1243.52 579.59,-1232.3"/>
+<polygon fill="#429e6a" stroke="#429e6a" points="580.71,-1235.62 588.99,-1229.01 578.39,-1229.01 580.71,-1235.62"/>
+<polygon fill="white" stroke="none" points="498.48,-1224.11 498.48,-1247.86 527.48,-1247.86 527.48,-1224.11 498.48,-1224.11"/>
+<text text-anchor="start" x="502.48" y="-1230.56" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">1, 0</text>
 </g>
 <!-- 7 -->
 <g id="node7" class="node">
@@ -114,11 +120,12 @@
 <!-- 6&#45;&gt;7 -->
 <g id="edge7" class="edge">
 <title>6&#45;&gt;7</title>
-<path fill="none" stroke="green" d="M620.72,-1197.1C616.02,-1182.14 609,-1159.77 602.96,-1140.55"/>
-<polygon fill="green" stroke="green" points="606.33,-1139.61 600,-1131.12 599.65,-1141.71 606.33,-1139.61"/>
+<path fill="none" stroke="#429e6a" d="M620.72,-1197.1C616.02,-1182.14 609,-1159.77 602.96,-1140.55"/>
+<polygon fill="#429e6a" stroke="#429e6a" points="606.33,-1139.61 600,-1131.12 599.65,-1141.71 606.33,-1139.61"/>
 <text text-anchor="middle" x="636.91" y="-1165.73" font-family="Times New Roman,serif" font-size="14.00">&quot;i == k&quot;</text>
 <text text-anchor="middle" x="636.91" y="-1149.98" font-family="Times New Roman,serif" font-size="14.00">c[8]</text>
-<text text-anchor="start" x="592.89" y="-1165.86" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">1,0</text>
+<polygon fill="white" stroke="none" points="579.14,-1165.41 579.14,-1189.16 608.14,-1189.16 608.14,-1165.41 579.14,-1165.41"/>
+<text text-anchor="start" x="583.14" y="-1171.86" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">1, 0</text>
 </g>
 <!-- 8 -->
 <g id="node8" class="node">
@@ -129,19 +136,21 @@
 </g>
 <!-- 6&#45;&gt;8 -->
 <g id="edge8" class="edge">
-<title>6&#45;&gt;8</title>
+<title>6&#45;&gt;8</title>+
 <path fill="none" stroke="blue" stroke-width="3.52" d="M673.11,-1206.92C717,-1197.51 780.06,-1176.28 810.04,-1129.53 825.2,-1105.89 817.07,-1073.77 807.19,-1050.36"/>
 <polygon fill="blue" stroke="blue" stroke-width="3.52" points="810.49,-1049.15 803.09,-1041.57 804.15,-1052.12 810.49,-1049.15"/>
 <text text-anchor="middle" x="851.79" y="-1104.05" font-family="Times New Roman,serif" font-size="14.00">&quot;(i != k)&quot;</text>
 <text text-anchor="middle" x="851.79" y="-1088.3" font-family="Times New Roman,serif" font-size="14.00"> Score: 0.63</text>
-<text text-anchor="start" x="751.18" y="-1172.42" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">3,4</text>
+<polygon fill="white" stroke="none" points="737.43,-1171.97 737.43,-1195.72 766.43,-1195.72 766.43,-1171.97 737.43,-1171.97"/>
+<text text-anchor="start" x="741.43" y="-1178.42" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">3, 4</text>
 </g>
 <!-- 7&#45;&gt;8 -->
 <g id="edge9" class="edge">
 <title>7&#45;&gt;8</title>
-<path fill="none" stroke="green" d="M655.42,-1074.55C685.53,-1062.36 720.6,-1048.17 747.53,-1037.27"/>
-<polygon fill="green" stroke="green" points="748.8,-1040.54 756.76,-1033.54 746.17,-1034.05 748.8,-1040.54"/>
-<text text-anchor="start" x="689.5" y="-1056.22" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">1,0</text>
+<path fill="none" stroke="#429e6a" d="M655.42,-1074.55C685.53,-1062.36 720.6,-1048.17 747.53,-1037.27"/>
+<polygon fill="#429e6a" stroke="#429e6a" points="748.8,-1040.54 756.76,-1033.54 746.17,-1034.05 748.8,-1040.54"/>
+<polygon fill="white" stroke="none" points="675.75,-1028.02 675.75,-1051.77 704.75,-1051.77 704.75,-1028.02 675.75,-1028.02"/>
+<text text-anchor="start" x="679.75" y="-1034.47" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">1, 0</text>
 </g>
 <!-- 9 -->
 <g id="node9" class="node">
@@ -158,7 +167,8 @@
 <text text-anchor="middle" x="745.16" y="-969.37" font-family="Times New Roman,serif" font-size="14.00">&quot;j == k&quot;</text>
 <text text-anchor="middle" x="745.16" y="-953.62" font-family="Times New Roman,serif" font-size="14.00">c[9]</text>
 <text text-anchor="middle" x="745.16" y="-937.87" font-family="Times New Roman,serif" font-size="14.00"> Score: 1</text>
-<text text-anchor="start" x="666.52" y="-962.55" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">0,4</text>
+<polygon fill="white" stroke="none" points="652.77,-962.1 652.77,-985.85 681.77,-985.85 681.77,-962.1 652.77,-962.1"/>
+<text text-anchor="start" x="656.77" y="-968.55" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">0, 4</text>
 </g>
 <!-- 10 -->
 <g id="node10" class="node">
@@ -169,19 +179,22 @@
 </g>
 <!-- 8&#45;&gt;10 -->
 <g id="edge11" class="edge">
-<title>8&#45;&gt;10</title>
-<path fill="none" stroke="green" d="M792.12,-1000.54C793.34,-971.02 793.12,-909.13 774.04,-861.56 765.07,-839.19 748.46,-817.7 734.28,-801.95"/>
-<polygon fill="green" stroke="green" points="737.12,-799.87 727.74,-794.93 732,-804.64 737.12,-799.87"/>
-<text text-anchor="middle" x="807.54" y="-884.06" font-family="Times New Roman,serif" font-size="14.00">(j != k)</text>
-<text text-anchor="start" x="766.08" y="-893.77" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">4,0</text>
+    <title>8&#45;&gt;10</title>
+    <path fill="none" stroke="#429e6a" d="M792.12,-1000.54C793.34,-971.02 793.12,-909.13 774.04,-861.56 765.07,-839.19 748.46,-817.7 734.28,-801.95"/>
+    <polygon fill="#429e6a" stroke="#429e6a" points="737.12,-799.87 727.74,-794.93 732,-804.64 737.12,-799.87"/>
+    <text text-anchor="middle" x="807.54" y="-894.06" font-family="Times New Roman,serif" font-size="14.00">(j != k)</text>
+    <polygon fill="white" stroke="none" points="768.83,-865.57 768.83,-889.32 797.83,-889.32 797.83,-865.57 768.83,-865.57"/>
+    <text text-anchor="start" x="772.83" y="-872.02" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">4, 0</text>
 </g>
+
 <!-- 9&#45;&gt;10 -->
 <g id="edge12" class="edge">
 <title>9&#45;&gt;10</title>
 <path fill="none" stroke="red" stroke-width="5" d="M591.17,-861.74C615.84,-843.96 648.08,-820.73 672.61,-803.05"/>
 <polygon fill="red" stroke="red" stroke-width="5" points="675.08,-806.67 680.63,-797.27 669.96,-799.57 675.08,-806.67"/>
 <text text-anchor="middle" x="683.16" y="-814.26" font-family="Times New Roman,serif" font-size="14.00"> Score: 1</text>
-<text text-anchor="start" x="621.01" y="-830.25" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">0,4</text>
+<polygon fill="white" stroke="none" points="607.26,-829.8 607.26,-853.55 636.26,-853.55 636.26,-829.8 607.26,-829.8"/>
+<text text-anchor="start" x="611.26" y="-836.25" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">0, 4</text>
 </g>
 <!-- 11 -->
 <g id="node11" class="node">
@@ -193,11 +206,12 @@
 <!-- 10&#45;&gt;11 -->
 <g id="edge13" class="edge">
 <title>10&#45;&gt;11</title>
-<path fill="none" stroke="green" d="M694.87,-757.69C680.4,-738.42 660.04,-705.59 660.04,-673.31 660.04,-673.31 660.04,-673.31 660.04,-439.94 660.04,-401.34 635.18,-364.55 612.51,-339.03"/>
-<polygon fill="green" stroke="green" points="615.32,-336.92 605.97,-331.93 610.18,-341.66 615.32,-336.92"/>
+<path fill="none" stroke="#429e6a" d="M694.87,-757.69C680.4,-738.42 660.04,-705.59 660.04,-673.31 660.04,-673.31 660.04,-673.31 660.04,-439.94 660.04,-401.34 635.18,-364.55 612.51,-339.03"/>
+<polygon fill="#429e6a" stroke="#429e6a" points="615.32,-336.92 605.97,-331.93 610.18,-341.66 615.32,-336.92"/>
 <text text-anchor="middle" x="711.04" y="-571.26" font-family="Times New Roman,serif" font-size="14.00">&quot;type_code == 0&quot;</text>
 <text text-anchor="middle" x="711.04" y="-555.51" font-family="Times New Roman,serif" font-size="14.00">c[10]</text>
-<text text-anchor="start" x="642.79" y="-442.39" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">2,0</text>
+<polygon fill="white" stroke="none" points="629.04,-441.94 629.04,-465.69 658.04,-465.69 658.04,-441.94 629.04,-441.94"/>
+<text text-anchor="start" x="633.04" y="-448.39" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">2, 0</text>
 </g>
 <!-- 13 -->
 <g id="node12" class="node">
@@ -213,7 +227,8 @@
 <polygon fill="blue" stroke="blue" stroke-width="3.88" points="801,-702.85 806.44,-693.77 796.52,-697.47 801,-702.85"/>
 <text text-anchor="middle" x="841.66" y="-726.51" font-family="Times New Roman,serif" font-size="14.00">&quot;(type_code != 0)&quot;</text>
 <text text-anchor="middle" x="841.66" y="-710.76" font-family="Times New Roman,serif" font-size="14.00"> Score: 0.72</text>
-<text text-anchor="start" x="752.98" y="-726.35" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">2,4</text>
+<polygon fill="white" stroke="none" points="739.23,-725.9 739.23,-749.65 768.23,-749.65 768.23,-725.9 739.23,-725.9"/>
+<text text-anchor="start" x="743.23" y="-732.35" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">2, 4</text>
 </g>
 <!-- 26 -->
 <g id="node13" class="node">
@@ -225,11 +240,12 @@
 <!-- 11&#45;&gt;26 -->
 <g id="edge15" class="edge">
 <title>11&#45;&gt;26</title>
-<path fill="none" stroke="green" d="M440.58,-287.89C401.89,-281.06 366.63,-271.21 353.54,-257.22 338.24,-240.88 334.79,-215.99 335.2,-195.04"/>
-<polygon fill="green" stroke="green" points="338.69,-195.25 335.72,-185.08 331.7,-194.88 338.69,-195.25"/>
+<path fill="none" stroke="#429e6a" d="M440.58,-287.89C401.89,-281.06 366.63,-271.21 353.54,-257.22 338.24,-240.88 334.79,-215.99 335.2,-195.04"/>
+<polygon fill="#429e6a" stroke="#429e6a" points="338.69,-195.25 335.72,-185.08 331.7,-194.88 338.69,-195.25"/>
 <text text-anchor="middle" x="457.29" y="-231.74" font-family="Times New Roman,serif" font-size="14.00">&quot;i + j &lt;= k or j + k &lt;= i or i + k &lt;= j&quot;</text>
 <text text-anchor="middle" x="457.29" y="-215.99" font-family="Times New Roman,serif" font-size="14.00">c[11]</text>
-<text text-anchor="start" x="336.28" y="-259.66" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">2,0</text>
+<polygon fill="white" stroke="none" points="322.53,-259.21 322.53,-282.96 351.53,-282.96 351.53,-259.21 322.53,-259.21"/>
+<text text-anchor="start" x="326.53" y="-265.66" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">2, 0</text>
 </g>
 <!-- 28 -->
 <g id="node14" class="node">
@@ -245,7 +261,8 @@
 <polygon fill="black" stroke="black" points="589.45,-191.17 594.92,-182.1 584.98,-185.78 589.45,-191.17"/>
 <text text-anchor="middle" x="700.16" y="-231.74" font-family="Times New Roman,serif" font-size="14.00">&quot;(not (i + j &lt;= k or j + k &lt;= i or i + k &lt;= j))&quot;</text>
 <text text-anchor="middle" x="700.16" y="-215.99" font-family="Times New Roman,serif" font-size="14.00">c[12]</text>
-<text text-anchor="start" x="559.39" y="-212.34" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">0,0</text>
+<polygon fill="white" stroke="none" points="553.51,-199.89 553.51,-223.64 582.51,-223.64 582.51,-199.89 553.51,-199.89"/>
+<text text-anchor="start" x="557.51" y="-206.34" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">0, 0</text>
 </g>
 <!-- 14 -->
 <g id="node15" class="node">
@@ -261,7 +278,8 @@
 <polygon fill="black" stroke="black" points="834.54,-544.63 831.04,-534.63 827.54,-544.63 834.54,-544.63"/>
 <text text-anchor="middle" x="877.91" y="-623.01" font-family="Times New Roman,serif" font-size="14.00">&quot;type_code &gt; 3&quot;</text>
 <text text-anchor="middle" x="877.91" y="-607.26" font-family="Times New Roman,serif" font-size="14.00">c[13]</text>
-<text text-anchor="start" x="813.79" y="-595.88" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">0,0</text>
+<polygon fill="white" stroke="none" points="800.04,-595.43 800.04,-619.18 829.04,-619.18 829.04,-595.43 800.04,-595.43"/>
+<text text-anchor="start" x="804.04" y="-601.88" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">0, 0</text>
 </g>
 <!-- 16 -->
 <g id="node16" class="node">
@@ -277,28 +295,32 @@
 <polygon fill="blue" stroke="blue" stroke-width="3.64" points="980.39,-600.51 985.06,-591 975.48,-595.53 980.39,-600.51"/>
 <text text-anchor="middle" x="1025.54" y="-623.01" font-family="Times New Roman,serif" font-size="14.00">&quot;(type_code &lt;= 3)&quot;</text>
 <text text-anchor="middle" x="1025.54" y="-607.26" font-family="Times New Roman,serif" font-size="14.00"> Score: 0.66</text>
-<text text-anchor="start" x="940.21" y="-631.62" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">2,4</text>
+<polygon fill="white" stroke="none" points="933.96,-603.42 933.96,-627.17 962.96,-627.17 962.96,-603.42 933.96,-603.42"/>
+<text text-anchor="start" x="937.96" y="-609.87" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">2, 4</text>
 </g>
 <!-- 26&#45;&gt;3 -->
 <g id="edge17" class="edge">
 <title>26&#45;&gt;3</title>
-<path fill="none" stroke="green" d="M436.56,-133.62C539.16,-111.5 698.81,-77.08 789.32,-57.57"/>
-<polygon fill="green" stroke="green" points="790.02,-60.99 799.06,-55.47 788.55,-54.15 790.02,-60.99"/>
-<text text-anchor="start" x="601.35" y="-96.82" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">2,0</text>
+<path fill="none" stroke="#429e6a" d="M436.56,-133.62C539.16,-111.5 698.81,-77.08 789.32,-57.57"/>
+<polygon fill="#429e6a" stroke="#429e6a" points="790.02,-60.99 799.06,-55.47 788.55,-54.15 790.02,-60.99"/>
+<polygon fill="white" stroke="none" points="587.6,-96.37 587.6,-120.12 616.6,-120.12 616.6,-96.37 587.6,-96.37"/>
+<text text-anchor="start" x="591.6" y="-102.82" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">2, 0</text>
 </g>
 <!-- 28&#45;&gt;3 -->
 <g id="edge18" class="edge">
 <title>28&#45;&gt;3</title>
 <path fill="none" stroke="black" d="M706.21,-128.39C740.55,-109.02 786.88,-82.89 819.29,-64.6"/>
 <polygon fill="black" stroke="black" points="820.99,-67.67 827.98,-59.71 817.55,-61.57 820.99,-67.67"/>
-<text text-anchor="start" x="750.42" y="-96.17" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">0,0</text>
+<polygon fill="white" stroke="none" points="736.67,-95.72 736.67,-119.47 765.67,-119.47 765.67,-95.72 736.67,-95.72"/>
+<text text-anchor="start" x="740.67" y="-102.17" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">0, 0</text>
 </g>
 <!-- 14&#45;&gt;3 -->
 <g id="edge21" class="edge">
 <title>14&#45;&gt;3</title>
 <path fill="none" stroke="black" d="M833.75,-476.9C836.07,-451.44 839.04,-412.17 839.04,-378.01 839.04,-378.01 839.04,-378.01 839.04,-154.43 839.04,-125.76 845.2,-93.52 850.51,-71.08"/>
 <polygon fill="black" stroke="black" points="853.88,-72.02 852.88,-61.47 847.08,-70.34 853.88,-72.02"/>
-<text text-anchor="start" x="821.79" y="-352.52" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">0,0</text>
+<polygon fill="white" stroke="none" points="808.04,-352.07 808.04,-375.82 837.04,-375.82 837.04,-352.07 808.04,-352.07"/>
+<text text-anchor="start" x="812.04" y="-358.52" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">0, 0</text>
 </g>
 <!-- 17 -->
 <g id="node17" class="node">
@@ -310,11 +332,12 @@
 <!-- 16&#45;&gt;17 -->
 <g id="edge22" class="edge">
 <title>16&#45;&gt;17</title>
-<path fill="none" stroke="green" d="M1003.25,-550.38C1002.75,-544.77 1002.28,-538.53 1002.04,-532.81 1000.35,-493.28 1001.59,-448.03 1002.96,-416.71"/>
-<polygon fill="green" stroke="green" points="1006.44,-417.09 1003.41,-406.94 999.45,-416.77 1006.44,-417.09"/>
+<path fill="none" stroke="#429e6a" d="M1003.25,-550.38C1002.75,-544.77 1002.28,-538.53 1002.04,-532.81 1000.35,-493.28 1001.59,-448.03 1002.96,-416.71"/>
+<polygon fill="#429e6a" stroke="#429e6a" points="1006.44,-417.09 1003.41,-406.94 999.45,-416.77 1006.44,-417.09"/>
 <text text-anchor="middle" x="1089.04" y="-507.33" font-family="Times New Roman,serif" font-size="14.00">&quot;type_code == 1 and i + j &gt; k&quot;</text>
 <text text-anchor="middle" x="1089.04" y="-491.58" font-family="Times New Roman,serif" font-size="14.00">c[14]</text>
-<text text-anchor="start" x="984.03" y="-480.3" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">1,0</text>
+<polygon fill="white" stroke="none" points="1003.28,-452.1 1003.28,-475.85 1032.28,-475.85 1032.28,-452.1 1003.28,-452.1"/>
+<text text-anchor="start" x="1007.28" y="-458.55" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">1, 0</text>
 </g>
 <!-- 19 -->
 <g id="node18" class="node">
@@ -330,14 +353,16 @@
 <polygon fill="blue" stroke="blue" stroke-width="4.16" points="1206.02,-475.55 1202.76,-465.42 1198.75,-475.28 1206.02,-475.55"/>
 <text text-anchor="middle" x="1308.91" y="-507.33" font-family="Times New Roman,serif" font-size="14.00">&quot;(not (type_code == 1 and i + j &gt; k))&quot;</text>
 <text text-anchor="middle" x="1308.91" y="-491.58" font-family="Times New Roman,serif" font-size="14.00"> Score: 0.79</text>
-<text text-anchor="start" x="1163.5" y="-534.56" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">1,4</text>
+<polygon fill="white" stroke="none" points="1149.75,-534.11 1149.75,-557.86 1178.75,-557.86 1178.75,-534.11 1149.75,-534.11"/>
+<text text-anchor="start" x="1153.75" y="-540.56" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">1, 4</text>
 </g>
 <!-- 17&#45;&gt;3 -->
 <g id="edge24" class="edge">
 <title>17&#45;&gt;3</title>
-<path fill="none" stroke="green" d="M969.95,-349.57C943.76,-327.79 909.46,-294.51 891.04,-257.22 860.9,-196.2 856.87,-114.49 857.1,-71.68"/>
-<polygon fill="green" stroke="green" points="860.6,-71.77 857.25,-61.72 853.6,-71.66 860.6,-71.77"/>
-<text text-anchor="start" x="858" y="-218.85" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">1,0</text>
+<path fill="none" stroke="#429e6a" d="M969.95,-349.57C943.76,-327.79 909.46,-294.51 891.04,-257.22 860.9,-196.2 856.87,-114.49 857.1,-71.68"/>
+<polygon fill="#429e6a" stroke="#429e6a" points="860.6,-71.77 857.25,-61.72 853.6,-71.66 860.6,-71.77"/>
+<polygon fill="white" stroke="none" points="844.25,-218.4 844.25,-242.15 873.25,-242.15 873.25,-218.4 844.25,-218.4"/>
+<text text-anchor="start" x="848.25" y="-224.85" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">1, 0</text>
 </g>
 <!-- 20 -->
 <g id="node19" class="node">
@@ -349,11 +374,12 @@
 <!-- 19&#45;&gt;20 -->
 <g id="edge25" class="edge">
 <title>19&#45;&gt;20</title>
-<path fill="none" stroke="green" d="M1187.68,-422.85C1183.54,-417.37 1179.28,-411.11 1176.04,-404.94 1163.85,-381.73 1170.66,-371.49 1157.04,-349.08 1137.51,-316.97 1107.97,-286.5 1083.85,-264.47"/>
-<polygon fill="green" stroke="green" points="1086.47,-262.12 1076.69,-258.05 1081.8,-267.33 1086.47,-262.12"/>
+<path fill="none" stroke="#429e6a" d="M1187.68,-422.85C1183.54,-417.37 1179.28,-411.11 1176.04,-404.94 1163.85,-381.73 1170.66,-371.49 1157.04,-349.08 1137.51,-316.97 1107.97,-286.5 1083.85,-264.47"/>
+<polygon fill="#429e6a" stroke="#429e6a" points="1086.47,-262.12 1076.69,-258.05 1081.8,-267.33 1086.47,-262.12"/>
 <text text-anchor="middle" x="1263.04" y="-379.46" font-family="Times New Roman,serif" font-size="14.00">&quot;type_code == 2 and i + k &gt; j&quot;</text>
 <text text-anchor="middle" x="1263.04" y="-363.71" font-family="Times New Roman,serif" font-size="14.00">c[15]</text>
-<text text-anchor="start" x="1127.32" y="-332.96" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">1,0</text>
+<polygon fill="white" stroke="none" points="1113.57,-304.76 1113.57,-328.51 1142.57,-328.51 1142.57,-304.76 1113.57,-304.76"/>
+<text text-anchor="start" x="1117.57" y="-311.21" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">1, 0</text>
 </g>
 <!-- 22 -->
 <g id="node20" class="node">
@@ -369,14 +395,16 @@
 <polygon fill="red" stroke="red" stroke-width="5" points="1381.78,-337.59 1377.43,-327.58 1373.03,-337.57 1381.78,-337.59"/>
 <text text-anchor="middle" x="1482.91" y="-379.46" font-family="Times New Roman,serif" font-size="14.00">&quot;(not (type_code == 2 and i + k &gt; j))&quot;</text>
 <text text-anchor="middle" x="1482.91" y="-363.71" font-family="Times New Roman,serif" font-size="14.00"> Score: 1</text>
-<text text-anchor="start" x="1356.13" y="-377.02" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">0,4</text>
+<polygon fill="white" stroke="none" points="1333.75,-392.32 1333.75,-416.07 1362.75,-416.07 1362.75,-392.32 1333.75,-392.32"/>
+<text text-anchor="start" x="1337.75" y="-398.77" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">0, 4</text>
 </g>
 <!-- 20&#45;&gt;3 -->
 <g id="edge27" class="edge">
 <title>20&#45;&gt;3</title>
-<path fill="none" stroke="green" d="M964.71,-205.06C953.47,-199.27 942.78,-192.14 934.04,-183.36 898.28,-147.45 918.44,-120.38 891.04,-77.75 888.9,-74.42 886.42,-71.12 883.79,-67.95"/>
-<polygon fill="green" stroke="green" points="886.49,-65.72 877.21,-60.61 881.28,-70.39 886.49,-65.72"/>
-<text text-anchor="start" x="892.36" y="-136.69" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">1,0</text>
+<path fill="none" stroke="#429e6a" d="M964.71,-205.06C953.47,-199.27 942.78,-192.14 934.04,-183.36 898.28,-147.45 918.44,-120.38 891.04,-77.75 888.9,-74.42 886.42,-71.12 883.79,-67.95"/>
+<polygon fill="#429e6a" stroke="#429e6a" points="886.49,-65.72 877.21,-60.61 881.28,-70.39 886.49,-65.72"/>
+<polygon fill="white" stroke="none" points="878.61,-136.24 878.61,-159.99 907.61,-159.99 907.61,-136.24 878.61,-136.24"/>
+<text text-anchor="start" x="882.61" y="-142.69" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">1, 0</text>
 </g>
 <!-- 23 -->
 <g id="node21" class="node">
@@ -393,7 +421,8 @@
 <text text-anchor="middle" x="1301.04" y="-239.62" font-family="Times New Roman,serif" font-size="14.00">&quot;type_code == 3 and j + k &gt; i&quot;</text>
 <text text-anchor="middle" x="1301.04" y="-223.87" font-family="Times New Roman,serif" font-size="14.00">c[16]</text>
 <text text-anchor="middle" x="1301.04" y="-208.12" font-family="Times New Roman,serif" font-size="14.00"> Score: 1</text>
-<text text-anchor="start" x="1195.73" y="-223.87" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">0,2</text>
+<polygon fill="white" stroke="none" points="1189.85,-211.42 1189.85,-235.17 1218.85,-235.17 1218.85,-211.42 1189.85,-211.42"/>
+<text text-anchor="start" x="1193.85" y="-217.87" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">0, 2</text>
 </g>
 <!-- 25 -->
 <g id="node22" class="node">
@@ -410,7 +439,8 @@
 <text text-anchor="middle" x="1511.91" y="-239.62" font-family="Times New Roman,serif" font-size="14.00">&quot;(not (type_code == 3 and j + k &gt; i))&quot;</text>
 <text text-anchor="middle" x="1511.91" y="-223.87" font-family="Times New Roman,serif" font-size="14.00">c[17]</text>
 <text text-anchor="middle" x="1511.91" y="-208.12" font-family="Times New Roman,serif" font-size="14.00"> Score: 1</text>
-<text text-anchor="start" x="1389.41" y="-221.21" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">0,2</text>
+<polygon fill="white" stroke="none" points="1375.28,-208.76 1375.28,-232.51 1404.28,-232.51 1404.28,-208.76 1375.28,-208.76"/>
+<text text-anchor="start" x="1379.28" y="-215.21" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">0, 2</text>
 </g>
 <!-- 23&#45;&gt;3 -->
 <g id="edge30" class="edge">
@@ -418,7 +448,8 @@
 <path fill="none" stroke="red" stroke-width="5" d="M1040.19,-128.95C999.84,-109.85 945.1,-83.95 906.2,-65.54"/>
 <polygon fill="red" stroke="red" stroke-width="5" points="908.16,-61.63 897.25,-61.3 904.42,-69.54 908.16,-61.63"/>
 <text text-anchor="middle" x="1022.16" y="-80.2" font-family="Times New Roman,serif" font-size="14.00"> Score: 1</text>
-<text text-anchor="start" x="948.5" y="-96.17" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">0,2</text>
+<polygon fill="white" stroke="none" points="934.75,-95.72 934.75,-119.47 963.75,-119.47 963.75,-95.72 934.75,-95.72"/>
+<text text-anchor="start" x="938.75" y="-102.17" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">0, 2</text>
 </g>
 <!-- 25&#45;&gt;3 -->
 <g id="edge31" class="edge">
@@ -426,7 +457,8 @@
 <path fill="none" stroke="red" stroke-width="5" d="M1318.66,-133.5C1245.53,-117.64 1142.06,-95.61 1051.04,-77.75 1013.66,-70.41 972.09,-62.81 937.14,-56.56"/>
 <polygon fill="red" stroke="red" stroke-width="5" points="938.33,-52.33 927.72,-54.89 936.8,-60.95 938.33,-52.33"/>
 <text text-anchor="middle" x="1225.16" y="-80.2" font-family="Times New Roman,serif" font-size="14.00"> Score: 1</text>
-<text text-anchor="start" x="1103.17" y="-94.1" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">0,2</text>
+<polygon fill="white" stroke="none" points="1089.42,-93.65 1089.42,-117.4 1118.42,-117.4 1118.42,-93.65 1089.42,-93.65"/>
+<text text-anchor="start" x="1093.42" y="-100.1" font-family="Times New Roman,serif" font-size="14.00" fill="darkmagenta">0, 2</text>
 </g>
 </g>
 </svg>
