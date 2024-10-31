@@ -21,7 +21,7 @@
 <g id="node2" class="node">
 <title>2</title>
 <ellipse fill="none" stroke="black" cx="133.4" cy="-58.32" rx="122.15" ry="39.07"/>
-<text text-anchor="middle" x="133.4" y="-60.07" font-family="Times New Roman,serif" font-size="10.00">2. type_code = type_code + 3</text>
+<text text-anchor="middle" x="133.4" y="-60.07" font-family="Times New Roman,serif" font-size="10.00">2. type_code = type_code + 4</text>
 <text text-anchor="middle" x="133.4" y="-48.82" font-family="Times New Roman,serif" font-size="10.00">return type_code</text>
 <text text-anchor="start" x="0" y="-87.88" font-family="Times New Roman,serif" font-size="10.00" fill="darkorange">0,4</text>
 </g>
