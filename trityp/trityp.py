@@ -4,7 +4,7 @@ def display_type_code(n):
     
 def is_side_two_equal_three(type_code):
     if type_code >= 0:
-        type_code = type_code + 3
+        type_code = type_code + 4 # bug, should be 3
         return type_code
 
 def is_side_one_equal_two(type_code):
