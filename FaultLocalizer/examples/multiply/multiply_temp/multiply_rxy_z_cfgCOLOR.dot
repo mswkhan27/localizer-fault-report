@@ -1,0 +1,87 @@
+digraph clustermultiply_rxy_z {
+	graph [bb="0,0,508.74,415.08",
+		label=multiply_rxy_z,
+		lheight=0.22,
+		lp="254.37,11.875",
+		lwidth=1.16,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>-1,-1</font>>
+	];
+	node [label="\N",
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>-1,-1</font>>
+	];
+	1	[height=0.77585,
+		label="1. if rxy == 0 or z == 0:",
+		pos="142.01,371.4",
+		width=2.6566,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>4,4</font>>,
+		xlp="37.746,407.21"];
+	2	[height=0.77585,
+		label="2. return 0",
+		pos="72.008,248.04",
+		width=1.3602,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>0,0</font>>,
+		xlp="14.416,283.85"];
+	1 -> 2	[label="\"rxy == 0 or z == 0\"\nc[5]",
+		label_bgcolor=white,
+		lp="131.51,309.72",
+		pos="e,66.363,276.1 92.613,347.08 84.763,341.15 77.697,333.99 73.008,325.47 66.735,314.08 65.119,300.21 65.512,287.43",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     0,0  <br/><br/></font>>,
+		xlp="46.833,322.64"];
+	3	[height=0.5,
+		label="3. rxyz = 0
+",
+		pos="212.01,248.04",
+		width=1.4184,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>4,4</font>>,
+		xlp="152.32,273.92"];
+	1 -> 3	[color=blue,
+		label="(not (rxy == 0 or z == 0))",
+		label_bgcolor=white,
+		lp="275.38,309.72",
+		pos="e,209.71,266.51 174.1,345 180.04,339.1 185.72,332.48 190.01,325.47 198.88,310.98 204.31,292.75 207.55,277.73",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     4,4  <br/><br/></font>>,
+		xlp="220.2,300.46"];
+	5	[height=0.5,
+		label="5. for j in range(abs(z)):
+",
+		pos="212.01,165.11",
+		width=2.7214,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>16,16</font>>,
+		xlp="98.664,190.99"];
+	3 -> 5	[color=blue,
+		label_bgcolor=white,
+		pos="e,212.01,183.53 212.01,229.88 212.01,219.75 212.01,206.68 212.01,195",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     4,4  <br/><br/></font>>,
+		xlp="190.26,214.67"];
+	6	[height=0.77585,
+		label="6. rxyz = rxyz + rxy",
+		pos="111.01,51.681",
+		width=2.2294,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>12,12</font>>,
+		xlp="15.375,87.486"];
+	5 -> 6	[color=blue,
+		label="\"range(abs(z))\"\nc[6]",
+		label_bgcolor=white,
+		lp="155.76,113.36",
+		pos="e,104.39,79.84 142.65,151.98 130.86,146.82 120.02,139.5 112.51,129.11 104.69,118.3 102.78,104.19 103.35,91.04",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     12,12  <br/><br/></font>>,
+		xlp="80.483,131.14"];
+	7	[height=0.77585,
+		label="7. print('Three Inputs Prod: ', rxyz)
+return rxyz
+",
+		pos="359.01,51.681",
+		width=4.1592,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>4,4</font>>,
+		xlp="200.65,31.625"];
+	5 -> 7	[color=blue,
+		label_bgcolor=white,
+		pos="e,324.14,79.114 234.33,147.19 255.67,131.01 288.44,106.18 315.02,86.025",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     4,4  <br/><br/></font>>,
+		xlp="257.31,121.16"];
+	6 -> 5	[color=blue,
+		label_bgcolor=white,
+		pos="e,212.32,146.88 166.6,72.093 178.47,78.558 189.87,86.927 198.01,97.611 206.19,108.35 209.85,122.78 211.4,135.45",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     12,12  <br/><br/></font>>,
+		xlp="229.7,94.471"];
+}

@@ -1,0 +1,5 @@
+1	Input MR1: Multiply each seed input with 16		
+	Output MR1:The expected output should append "0" to each element's hexadecimal representation.		
+	
+2	Input MR2:Incrementing each number by 2	
+	Output MR2: The expected output should be = to the output of  actual input plus 2	

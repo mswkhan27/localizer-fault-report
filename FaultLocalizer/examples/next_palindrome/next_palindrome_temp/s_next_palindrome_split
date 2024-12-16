@@ -1,0 +1,57 @@
+digraph clusternext_palindrome {
+	graph [label=next_palindrome]
+	1 [label="c[7] += 1
+n = len(digit_list)
+mid = n // 2
+if n % 2 == 0:
+"]
+	2 [label="c[1] += 1
+left_side = digit_list[:mid]
+left_side_reverse = left_side[::-1]
+candidate = left_side + left_side_reverse
+"]
+	3 [label="if candidate > digit_list:
+"]
+	5 [label="c[3] += 1
+return candidate
+"]
+	3 -> 5 [label="candidate > digit_list"]
+	6 [label="for i in range(mid - 1, -1, -1):
+"]
+	8 [label="c[4] += 1
+if digit_list[i] < 9:
+"]
+	10 [label="c[5] += 1
+digit_list[i] += 1
+if i != n - i - 1:
+"]
+	12 [label="c[6] += 1
+digit_list[n - i - 1] = digit_list[i]
+"]
+	13 [label="return digit_list[:mid] + [digit_list[mid]] * (n % 2) + digit_list[mid - 1::-1]
+"]
+	12 -> 13 [label=""]
+	10 -> 12 [label="i != n - i - 1"]
+	10 -> 13 [label="(i == n - i - 1)"]
+	8 -> 10 [label="digit_list[i] < 9"]
+	11 [label="digit_list[i] = 0
+digit_list[n - i - 1] = 0
+"]
+	11 -> 6 [label=""]
+	8 -> 11 [label="(digit_list[i] >= 9)"]
+	6 -> 8 [label="range(mid - 1, -1, -1)"]
+	9 [label="return [1] + [0] * (n - 1) + [1]
+"]
+	6 -> 9 [label=""]
+	3 -> 6 [label="(candidate <= digit_list)"]
+	2 -> 3 [label=""]
+	1 -> 2 [label="n % 2 == 0"]
+	4 [label="c[2] += 1
+left_side = digit_list[:mid]
+middle = digit_list[mid]
+left_side_reverse = left_side[::-1]
+candidate = left_side + [middle] + left_side_reverse
+"]
+	4 -> 3 [label=""]
+	1 -> 4 [label="(n % 2 != 0)"]
+}

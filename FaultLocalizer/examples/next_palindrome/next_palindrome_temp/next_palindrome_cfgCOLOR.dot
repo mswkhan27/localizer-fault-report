@@ -1,0 +1,184 @@
+digraph clusternext_palindrome {
+	graph [bb="0,0,824.32,991.81",
+		label=next_palindrome,
+		lheight=0.22,
+		lp="412.16,11.875",
+		lwidth=1.29,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>-1,-1</font>>
+	];
+	node [label="\N",
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>-1,-1</font>>
+	];
+	1	[height=1.3946,
+		label="1. n = len(digit_list)
+mid = n // 2
+if n % 2 == 0:",
+		pos="405.83,925.85",
+		width=2.1704,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>15,15</font>>,
+		xlp="312.32,983.94"];
+	2	[height=1.3946,
+		label="2. left_side = digit_list[:mid]
+left_side_reverse = left_side[::-1]
+candidate = left_side + left_side_reverse",
+		pos="203.83,746.81",
+		width=4.7631,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>15,1</font>>,
+		xlp="20.355,804.89"];
+	1 -> 2	[color=blue,
+		label="\"n % 2 == 0\"\nc[1]",
+		label_bgcolor=white,
+		lp="367.7,841.9",
+		pos="e,257.35,794.72 359.99,884.68 332.11,860.25 296.15,828.73 265.76,802.09",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     15,1  <br/><br/></font>>,
+		xlp="283.73,847.73"];
+	4	[height=1.7039,
+		label="4. left_side = digit_list[:mid]
+middle = digit_list[mid]
+left_side_reverse = left_side[::-1]
+candidate = left_side + [middle] + \
+left_side_reverse",
+		pos="608.83,746.81",
+		width=5.9859,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>0,14</font>>,
+		xlp="381.33,816.02"];
+	1 -> 4	[color=red,
+		label="\"(n % 2 != 0)\"\nc[2]",
+		label_bgcolor=white,
+		lp="553.33,841.9",
+		pos="e,542.78,805.41 451.64,884.9 476.01,863.64 506.59,836.97 534.29,812.82",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     0,14  <br/><br/></font>>,
+		xlp="472.25,852.89"];
+	3	[height=0.5,
+		label="3. if candidate > digit_list:
+",
+		pos="405.83,630.47",
+		width=2.9709,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>15,15</font>>,
+		xlp="283.5,656.34"];
+	2 -> 3	[color=blue,
+		label_bgcolor=white,
+		pos="e,376.23,648.22 281.64,701.76 310.62,685.36 342.29,667.43 366.4,653.79",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     15,1  <br/><br/></font>>,
+		xlp="303.78,682.88"];
+	4 -> 3	[color=red,
+		label_bgcolor=white,
+		pos="e,435.32,648.08 512.38,691.48 488.62,678.1 464.49,664.51 445.22,653.65",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     0,14  <br/><br/></font>>,
+		xlp="448.8,677.7"];
+	5	[height=0.77585,
+		label="5. return candidate",
+		pos="330.83,517.04",
+		width=2.0673,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>2,3</font>>,
+		xlp="247.78,552.84"];
+	3 -> 5	[color=blue,
+		label="\"candidate > digit_list\"\nc[3]",
+		label_bgcolor=white,
+		lp="429.95,578.72",
+		pos="e,339.84,545.04 382.87,612.47 376.73,607.18 370.45,601 365.58,594.47 356.86,582.78 349.65,568.57 344.1,555.58",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     2,3  <br/><br/></font>>,
+		xlp="335.02,588.94"];
+	6	[height=0.5,
+		label="6. for i in range(mid - 1, -1, -1):
+",
+		pos="549.83,517.04",
+		width=3.5115,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>13,12</font>>,
+		xlp="438.79,542.91"];
+	3 -> 6	[color=blue,
+		label="(candidate <= digit_list)",
+		label_bgcolor=white,
+		lp="588.58,578.72",
+		pos="e,540.89,535.43 457.75,614.37 470.3,609.27 483.16,602.72 493.83,594.47 511.07,581.13 525.46,561.12 535.34,544.93",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     13,12  <br/><br/></font>>,
+		xlp="535.8,590.12"];
+	8	[height=0.77585,
+		label="8. if digit_list[i] < 9:",
+		pos="323.83,393.68",
+		width=2.1999,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>13,12</font>>,
+		xlp="229.26,429.48"];
+	6 -> 8	[color=blue,
+		label="\"range(mid - 1, -1, -1)\"\nc[4]",
+		label_bgcolor=white,
+		lp="481.95,455.36",
+		pos="e,349.84,420.19 490.31,500.77 466.85,493.5 440.17,483.62 417.58,471.11 396.3,459.32 375.09,442.56 358.24,427.73",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     13,12  <br/><br/></font>>,
+		xlp="386.58,477.58"];
+	9	[height=0.5,
+		label="9. return [1] + [0] * (n - 1) + [1]
+",
+		pos="549.83,393.68",
+		width=3.5808,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>0,0</font>>,
+		xlp="412.29,419.55"];
+	6 -> 9	[label_bgcolor=white,
+		pos="e,549.83,412.03 549.83,498.65 549.83,479 549.83,446.72 549.83,423.34",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     0,0  <br/><br/></font>>,
+		xlp="571.58,463.31"];
+	10	[height=1.0852,
+		label="10. digit_list[i] += 1
+if i != n - i - 1:",
+		pos="323.83,259.18",
+		width=2.082,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>13,12</font>>,
+		xlp="233.5,306.12"];
+	8 -> 10	[color=blue,
+		label="\"digit_list[i] < 9\"\nc[5]",
+		label_bgcolor=white,
+		lp="370.7,332",
+		pos="e,323.83,298.58 323.83,365.54 323.83,349.56 323.83,328.83 323.83,310",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     13,12  <br/><br/></font>>,
+		xlp="295.33,339.96"];
+	11	[height=0.77585,
+		label="11. digit_list[i] = 0
+digit_list[n - i - 1] = 0
+",
+		pos="570.83,259.18",
+		width=2.6566,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>0,0</font>>,
+		xlp="466.56,294.98"];
+	8 -> 11	[label="(digit_list[i] >= 9)",
+		label_bgcolor=white,
+		lp="525.33,332",
+		pos="e,531.29,284.9 372.9,371.36 388.68,364.19 406.14,355.92 421.83,347.75 455.74,330.06 492.82,308.28 521.51,290.86",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     0,0  <br/><br/></font>>,
+		xlp="453.38,322.81"];
+	12	[height=0.77585,
+		label="12. digit_list[n - i - 1] = digit_list[i]",
+		pos="239.83,124.68",
+		width=3.6878,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>13,12</font>>,
+		xlp="91.691,160.49"];
+	10 -> 12	[color=blue,
+		label="\"i != n - i - 1\"\nc[6]",
+		label_bgcolor=white,
+		lp="325.7,186.36",
+		pos="e,257.06,152.87 300.65,221.62 288.96,203.18 274.82,180.87 263.11,162.41",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     13,12  <br/><br/></font>>,
+		xlp="250.36,195.13"];
+	13	[height=0.5,
+		label="13. return digit_list[:mid] + [digit_list[mid]] * (n % 2) + digit_list[mid - 1::-1]
+",
+		pos="323.83,41.75",
+		width=8.141,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>13,12</font>>,
+		xlp="15.375,67.625"];
+	10 -> 13	[label="(i == n - i - 1)",
+		label_bgcolor=white,
+		lp="426.08,124.68",
+		pos="e,350.87,60.168 354.67,223.09 359.55,216.42 364.18,209.28 367.83,202.11 378.19,181.73 378.69,175.26 381.83,152.61 385.24,128.02 \
+391.74,119.51 381.83,96.75 376.96,85.565 368.5,75.65 359.53,67.468",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     0,0  <br/><br/></font>>,
+		xlp="404.51,154.48"];
+	11 -> 6	[label_bgcolor=white,
+		pos="e,592.75,499.79 610.86,284.97 654.68,315.45 715.28,369.56 687.83,421.61 669.94,455.52 633.78,479.57 602.96,494.92",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     0,0  <br/><br/></font>>,
+		xlp="640.15,462.91"];
+	12 -> 13	[color=blue,
+		label_bgcolor=white,
+		pos="e,305.79,60.124 267.33,97.181 277.1,87.768 288.06,77.206 297.71,67.908",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     13,12  <br/><br/></font>>,
+		xlp="258.18,86.417"];
+}

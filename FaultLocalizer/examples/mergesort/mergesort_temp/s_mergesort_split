@@ -1,0 +1,29 @@
+digraph clustermergesort {
+	graph [label=mergesort]
+	1 [label="c[9] += 1
+if len(arr) <= 1:
+"]
+	2 [label="c[4] += 1
+return arr
+"]
+	1 -> 2 [label="len(arr) <= 1"]
+	4 [label="c[5] += 1
+if len(arr) % 2 == 0:
+"]
+	5 [label="c[6] += 1
+middle = len(arr) // 2
+left = mergesort(arr[:middle])
+right = mergesort(arr[middle:])
+return merge(left, right)
+"]
+	4 -> 5 [label="len(arr) % 2 == 0"]
+	7 [label="c[7] += 1
+middle = len(arr) // 2
+left = mergesort(arr[:middle])
+right = mergesort(arr[middle:])
+left.reverse()
+return merge(left, right)
+"]
+	4 -> 7 [label="(len(arr) % 2 != 0)"]
+	1 -> 4 [label="(len(arr) > 1)"]
+}

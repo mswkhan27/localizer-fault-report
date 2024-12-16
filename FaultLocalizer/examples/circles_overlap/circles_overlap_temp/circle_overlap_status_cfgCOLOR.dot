@@ -1,0 +1,120 @@
+digraph clustercircle_overlap_status {
+	graph [bb="0,0,934.18,611.08",
+		label=circle_overlap_status,
+		lheight=0.22,
+		lp="467.09,11.875",
+		lwidth=1.65,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>-1,-1</font>>
+	];
+	node [label="\N",
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>-1,-1</font>>
+	];
+	1	[height=1.0852,
+		label="1. d = math.sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2)
+if d <= r1 - r2:",
+		pos="206.75,556.26",
+		width=5.264,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>1,1</font>>,
+		xlp="8.625,603.2"];
+	2	[height=0.77585,
+		label="2. return 'C2 is in C1'",
+		pos="156.75,421.76",
+		width=2.3767,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>0,0</font>>,
+		xlp="62.568,457.57"];
+	1 -> 2	[label="\"d <= r1 - r2\"\nc[1]",
+		label_bgcolor=white,
+		lp="223.75,483.44",
+		pos="e,166.9,449.65 192.29,516.94 185.56,499.09 177.57,477.93 170.88,460.2",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     0,0  <br/><br/></font>>,
+		xlp="157.93,491.38"];
+	4	[height=0.77585,
+		label="4. if d <= r2 - r1:",
+		pos="328.75,421.76",
+		width=1.8905,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>1,1</font>>,
+		xlp="252.07,457.57"];
+	1 -> 4	[color=blue,
+		label="\"(d > r1 - r2)\"\nc[2]",
+		label_bgcolor=white,
+		lp="333.13,483.44",
+		pos="e,309.21,448.63 248.47,517.69 254.74,511.64 261.02,505.35 266.75,499.19 278.97,486.1 291.57,470.91 302.2,457.54",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     1,1  <br/><br/></font>>,
+		xlp="269.09,476.57"];
+	5	[height=0.77585,
+		label="5. return 'C1 is in C2'",
+		pos="261.75,298.4",
+		width=2.3767,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>0,0</font>>,
+		xlp="167.57,334.21"];
+	4 -> 5	[label="\"d <= r2 - r1\"\nc[3]",
+		label_bgcolor=white,
+		lp="334.75,360.08",
+		pos="e,272.04,326.27 308.23,394.8 303.86,388.74 299.45,382.19 295.75,375.83 288.58,363.47 281.89,349.31 276.38,336.57",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     0,0  <br/><br/></font>>,
+		xlp="266.33,369.52"];
+	7	[height=0.77585,
+		label="7. if d < r1 + r2:",
+		pos="429.75,298.4",
+		width=1.8021,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>1,1</font>>,
+		xlp="356.25,334.21"];
+	4 -> 7	[color=blue,
+		label="\"(d > r2 - r1)\"\nc[4]",
+		label_bgcolor=white,
+		lp="438.13,360.08",
+		pos="e,412.04,325.63 355.16,395.76 361.45,389.44 368,382.54 373.75,375.83 384.79,362.98 396.01,348.09 405.48,334.89",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     1,1  <br/><br/></font>>,
+		xlp="396,354.13"];
+	8	[height=0.77585,
+		label="8. return 'Circumference of C1 and C2 intersect'",
+		pos="336.75,175.04",
+		width=5.3082,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>1,0</font>>,
+		xlp="137.03,210.85"];
+	7 -> 8	[color="#429E6A",
+		label="\"d < r1 + r2\"\nc[5]",
+		label_bgcolor=white,
+		lp="431.5,236.72",
+		pos="e,357.64,203.3 409.8,271.37 396.59,254.13 379.09,231.28 364.52,212.28",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     1,0  <br/><br/></font>>,
+		xlp="361.86,245.07"];
+	10	[height=0.77585,
+		label="10. if d > r1 + r2:",
+		pos="610.75,175.04",
+		width=1.8021,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>0,1</font>>,
+		xlp="537.25,210.85"];
+	7 -> 10	[color=red,
+		label="\"(d >= r1 + r2)\"\nc[6]",
+		label_bgcolor=white,
+		lp="588.13,236.72",
+		pos="e,576.41,199.07 464.22,274.29 493.41,254.72 535.42,226.55 566.98,205.39",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     0,1  <br/><br/></font>>,
+		xlp="498.48,244.61"];
+	11	[height=0.77585,
+		label="11. return 'Circumference of C1 and C2 will touch'",
+		pos="430.75,51.681",
+		width=5.4555,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>0,1</font>>,
+		xlp="225.73,87.486"];
+	10 -> 11	[color=red,
+		label="\"d > r1 + r2\"\nc[7]",
+		label_bgcolor=white,
+		lp="579.5,113.36",
+		pos="e,470.56,79.516 576.47,150.93 549.11,132.48 510.42,106.39 479.78,85.738",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     0,1  <br/><br/></font>>,
+		xlp="501.64,123.02"];
+	13	[height=0.77585,
+		label="13. return 'C1 and C2 do not overlap'",
+		pos="789.75,51.681",
+		width=4.0118,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>0,0</font>>,
+		xlp="636.7,87.486"];
+	10 -> 13	[label="\"(d <= r1 + r2)\"\nc[8]",
+		label_bgcolor=white,
+		lp="766.13,113.36",
+		pos="e,751.13,78.868 644.84,150.93 672.33,132.29 711.31,105.86 741.92,85.111",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     0,0  <br/><br/></font>>,
+		xlp="676.05,122.9"];
+}

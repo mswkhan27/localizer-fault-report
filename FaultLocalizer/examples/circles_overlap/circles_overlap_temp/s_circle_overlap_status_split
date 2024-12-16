@@ -1,0 +1,39 @@
+digraph clustercircle_overlap_status {
+	graph [label=circle_overlap_status]
+	1 [label="c[9] += 1
+d = math.sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2)
+if d <= r1 - r2:
+"]
+	2 [label="c[1] += 1
+return 'C2 is in C1'
+"]
+	1 -> 2 [label="d <= r1 - r2"]
+	4 [label="c[2] += 1
+if d <= r2 - r1:
+"]
+	5 [label="c[3] += 1
+return 'C1 is in C2'
+"]
+	4 -> 5 [label="d <= r2 - r1"]
+	7 [label="c[4] += 1
+if d < r1 + r2:
+"]
+	8 [label="c[5] += 1
+return 'Circumference of C1 and C2 intersect'
+"]
+	7 -> 8 [label="d < r1 + r2"]
+	10 [label="c[6] += 1
+if d > r1 + r2:
+"]
+	11 [label="c[7] += 1
+return 'Circumference of C1 and C2 will touch'
+"]
+	10 -> 11 [label="d > r1 + r2"]
+	13 [label="c[8] += 1
+return 'C1 and C2 do not overlap'
+"]
+	10 -> 13 [label="(d <= r1 + r2)"]
+	7 -> 10 [label="(d >= r1 + r2)"]
+	4 -> 7 [label="(d > r2 - r1)"]
+	1 -> 4 [label="(d > r1 - r2)"]
+}

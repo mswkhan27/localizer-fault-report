@@ -1,0 +1,170 @@
+[
+  {
+    "Module_name": "merge",
+    "Max_score": 0.48,
+    "Block_Info": [
+      {
+        "Block ID": 2,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "while i < len(left) and j < len(right):"
+          }
+        ]
+      },
+      {
+        "Block ID": 3,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "if left[i] <= right[j]:"
+          }
+        ]
+      },
+      {
+        "Block ID": 3,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "if left[i] <= right[j]:"
+          }
+        ]
+      },
+      {
+        "Block ID": 5,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "result.append(left[i])"
+          },
+          {
+            "statement": "i += 1"
+          }
+        ]
+      },
+      {
+        "Block ID": 3,
+        "Susp. score": 0.48,
+        "Statements_info": [
+          {
+            "statement": "if left[i] <= right[j]:"
+          }
+        ]
+      },
+      {
+        "Block ID": 7,
+        "Susp. score": 0.48,
+        "Statements_info": [
+          {
+            "statement": "result.append(right[j])"
+          },
+          {
+            "statement": "j += 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Module_name": "mergesort",
+    "Max_score": 0.5,
+    "Block_Info": [
+      {
+        "Block ID": 1,
+        "Susp. score": 0.46,
+        "Statements_info": [
+          {
+            "statement": "if len(arr) <= 1:"
+          }
+        ]
+      },
+      {
+        "Block ID": 2,
+        "Susp. score": 0.46,
+        "Statements_info": [
+          {
+            "statement": "return arr"
+          }
+        ]
+      },
+      {
+        "Block ID": 1,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "if len(arr) <= 1:"
+          }
+        ]
+      },
+      {
+        "Block ID": 4,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "if len(arr) % 2 == 0:"
+          }
+        ]
+      },
+      {
+        "Block ID": 4,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "if len(arr) % 2 == 0:"
+          }
+        ]
+      },
+      {
+        "Block ID": 5,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "middle = len(arr) // 2"
+          },
+          {
+            "statement": "left = mergesort(arr[:middle])"
+          },
+          {
+            "statement": "right = mergesort(arr[middle:])"
+          },
+          {
+            "statement": "return merge(left, right)"
+          }
+        ]
+      },
+      {
+        "Block ID": 4,
+        "Susp. score": 0.5,
+        "Statements_info": [
+          {
+            "statement": "if len(arr) % 2 == 0:"
+          }
+        ]
+      },
+      {
+        "Block ID": 7,
+        "Susp. score": 0.5,
+        "Statements_info": [
+          {
+            "statement": "middle = len(arr) // 2"
+          },
+          {
+            "statement": "left = mergesort(arr[:middle])"
+          },
+          {
+            "statement": "right = mergesort(arr[middle:])"
+          },
+          {
+            "statement": "left.reverse()"
+          },
+          {
+            "statement": "return merge(left, \\"
+          },
+          {
+            "statement": "right)"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,22 @@
+1	"Input MR1:	 sin(x) = sin(x + 2π)"				
+	Output MR1: The expected output should be = to the output of  actual input				
+2	Input MR2: sin(x) = -sin(x + π)				
+	Output MR2: The expected output should be = to the output of  actual input				
+3	Input MR3:-sin(-x) = sin(x)				
+	Output MR3: The expected output should be = to the output of  actual input				
+4	Input MR4: sin(x) = sin(π - x)				
+	Output MR4: The expected output should be = to the output of  actual input				
+5	Input MR5: sin(x) = -sin(2π - x)				
+	Output MR5: The expected output should be = to the output of  actual input				
+?????6	"Input MR6:sin(x) + sin(y) + sin(z) - sin(x+y+z) = 4 *sin((x+y)/2) * sin((x +z)/2) * sin((y+z)/2)
+sin((x+y)/2) * sin((x +z)/2) * sin((y+z)/2)
+sin((x+y)/2) * sin((x +z)/2) * sin((y+z)/2)"				
+	Output MR6: The expected output should be = to the output of  actual input				
+7	Input MR7: sin^2(x) + sin^2(π / 2 - x)=1				
+	Output MR7: The expected output should be = to the output of  actual input				
+8	Input MR8:sin(3 * x) = 3 * sin(x) – 4 sin^3(x)				
+	Output MR8: The expected output should be = to the output of  actual input				
+9	Input MR9:sin(x)^2 - sin(y)^2 = sin(x + y) * sin( x - y)				
+	Output MR9: The expected output should be = to the output of  actual input				
+10	"Input MR10:sin(5 * x) = 16 * sin^5(x) + 5 * sin(3 * x) –10 * sin(x)			
+	Output MR10: The expected output should be = to the output of  actual input				

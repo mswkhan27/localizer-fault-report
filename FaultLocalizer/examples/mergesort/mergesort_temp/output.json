@@ -1,0 +1,8 @@
+{
+  "mergesort": [],
+  "mergesort.merge": [],
+  "mergesort.mergesort": [
+    "mergesort.merge",
+    "mergesort.mergesort"
+  ]
+}

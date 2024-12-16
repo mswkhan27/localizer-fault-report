@@ -1,0 +1,314 @@
+<html>
+<head>
+<meta charset='UTF-8'>
+<title> Localizer Report </title>
+<style>
+table, td, tr {
+   border: black solid 1px
+}
+</style>
+</head>
+<body><div id='top'></div
+<p>Generated: 2024-12-16 20:06:39.442686</p><h1><strong>equilateral_area</strong></h1><hr/>
+<h2><strong>Tests Inputs</strong></h2>
+<p>Passed: [[1], [0], [1.0], [0.0], [1e-10], [1e-07], [0.1], [0.01], [1e-09], [1.0000001]]</p>
+<p>Failed: [[2], [3], [4], [5], [6], [7], [8], [9], [10], [1.5]]</p>
+<svg width="309pt" height="152pt"
+ viewBox="0.00 0.00 308.51 151.61" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 147.61)">
+<polygon fill="white" stroke="none" points="-4,4 -4,-147.61 304.51,-147.61 304.51,4 -4,4"/>
+<!-- equilateral_area.equilateral_area -->
+<g id="node1" class="node">
+<title>equilateral_area.equilateral_area</title>
+<g id="a_node1"><a xlink:href="fault_report.html#equilateral_area" xlink:title="equilateral_area.equilateral_area\nMax Score: 0.62">
+<ellipse fill="none" stroke="red" stroke-width="2" cx="165.63" cy="-99.93" rx="134.88" ry="27.93"/>
+<text text-anchor="middle" x="165.63" y="-102.38" font-family="Times New Roman,serif" font-size="14.00">equilateral_area.equilateral_area</text>
+<text text-anchor="middle" x="165.63" y="-86.63" font-family="Times New Roman,serif" font-size="14.00">Max Score: 0.62</text>
+</a>
+</g>
+<text text-anchor="start" x="0" y="-114.56" font-family="Times New Roman,serif" font-size="14.00" fill="darkorange">10,10</text>
+</g>
+<!-- math.pow -->
+<g id="node2" class="node">
+<title>math.pow</title>
+<g id="a_node2"><a xlink:href="fault_report.html#pow" xlink:title="math.pow">
+<ellipse fill="none" stroke="black" stroke-width="2" cx="110.63" cy="-18" rx="47.57" ry="18"/>
+<text text-anchor="middle" x="110.63" y="-12.57" font-family="Times New Roman,serif" font-size="14.00">math.pow</text>
+</a>
+</g>
+</g>
+<!-- equilateral_area.equilateral_area&#45;&gt;math.pow -->
+<g id="edge1" class="edge">
+<title>equilateral_area.equilateral_area&#45;&gt;math.pow</title>
+<path fill="none" stroke="black" d="M146.7,-71.42C140.9,-62.98 134.52,-53.72 128.77,-45.36"/>
+<polygon fill="black" stroke="black" points="131.78,-43.57 123.23,-37.31 126.02,-47.53 131.78,-43.57"/>
+</g>
+<!-- math.sqrt -->
+<g id="node3" class="node">
+<title>math.sqrt</title>
+<g id="a_node3"><a xlink:href="fault_report.html#sqrt" xlink:title="math.sqrt">
+<ellipse fill="none" stroke="black" stroke-width="2" cx="221.63" cy="-18" rx="45.57" ry="18"/>
+<text text-anchor="middle" x="221.63" y="-12.57" font-family="Times New Roman,serif" font-size="14.00">math.sqrt</text>
+</a>
+</g>
+</g>
+<!-- equilateral_area.equilateral_area&#45;&gt;math.sqrt -->
+<g id="edge2" class="edge">
+<title>equilateral_area.equilateral_area&#45;&gt;math.sqrt</title>
+<path fill="none" stroke="black" d="M184.9,-71.42C190.82,-62.98 197.3,-53.72 203.16,-45.36"/>
+<polygon fill="black" stroke="black" points="205.94,-47.5 208.81,-37.3 200.2,-43.49 205.94,-47.5"/>
+</g>
+</g>
+</svg>
+<hr>
+<li><a href='#equilateral_area'>equilateral_area</a></li>
+<li><a href='#table'>Susp table</a></li><div id=equilateral_area>
+<hr>
+<h2>equilateral_area</h2>
+<div style='display: flex;flex-wrap: wrap;justify-content: flex-start;align-items: flex-start;max-width: 100%;overflow-x: hidden;'>
+<div style='flex: 1 1 auto;margin: 5px;overflow: hidden'>
+<object type='image/svg+xml' data=resources/images/equilateral_area_hm.svg ></object>
+</div>
+<div style='flex: 8;'>
+<object type='image/svg+xml' data=resources/images/equilateral_area_cfg.svg style=' max-width: 100%;height: auto;'></object>
+</div></div>
+<a href=resources/images/equilateral_area_cfg.svg target='_blank''>View CFG</a><br>
+<a href='#top'>Back</a>
+<hr>
+</div>
+<style>
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+}
+th, td {
+    border: none;
+    border-right: 1px solid;
+    text-align: left;
+    vertical-align: top; /* Align content to the top vertically */
+}
+td:first-child {
+    word-wrap: nowrap;
+}
+tr {
+    border: none;
+}
+.grey-background {
+    background-color: transparent;
+    border: none;
+}
+</style>
+<div>
+	<label for='threshold'>Threshold:</label>
+	<input type='number' id='threshold' name='threshold' step='0.01' value='0.57'>
+	<button onclick='updateTable()'>Update the Table</button>
+</div>
+<h2>Suspiciousness Score per basic blocks per the above threshold</h2><table id='table'>
+<tr>
+	<th style='border:1px solid black'>Module Name</th>
+	<th style='border:1px solid black'>Max Score</th>
+	<th style='border:1px solid black'>Susp. Score</th>
+	<th style='border:1px solid black'>Block ID</th>
+	<th style='border:1px solid black'>Statements</th>
+</tr>
+<tr>
+	<td style='width:300px'> <a href='#equilateral_area'>equilateral_area</a><span><a href='resources/code_files/equilateral_area.py' target='_blank'> <i>(View Code)</i></a></span></td>	<td>0.62</td>	<td>0</td>	<td>1</td>
+	<td>const = math.sqrt(3) / 4</td>
+</tr>
+<tr>
+	<td style='width:300px'> <a href='#equilateral_area'>equilateral_area</a><span><a href='resources/code_files/equilateral_area.py' target='_blank'> <i>(View Code)</i></a></span></td>	<td>0.62</td>	<td>0</td>	<td>1</td>
+	<td>if side == 1:</td>
+</tr>
+<tr class='empty-row' style='height:30px'>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+</tr>
+<tr>
+	<td style='width:300px'> <a href='#equilateral_area'>equilateral_area</a><span><a href='resources/code_files/equilateral_area.py' target='_blank'> <i>(View Code)</i></a></span></td>	<td>0.62</td>	<td>0</td>	<td>2</td>
+	<td>return const</td>
+</tr>
+<tr class='empty-row' style='height:30px'>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+</tr>
+<tr>
+	<td style='width:300px'> <a href='#equilateral_area'>equilateral_area</a><span><a href='resources/code_files/equilateral_area.py' target='_blank'> <i>(View Code)</i></a></span></td>	<td>0.62</td>	<td>0.62</td>	<td>1</td>
+	<td>const = math.sqrt(3) / 4</td>
+</tr>
+<tr>
+	<td style='width:300px'> <a href='#equilateral_area'>equilateral_area</a><span><a href='resources/code_files/equilateral_area.py' target='_blank'> <i>(View Code)</i></a></span></td>	<td>0.62</td>	<td>0.62</td>	<td>1</td>
+	<td>if side == 1:</td>
+</tr>
+<tr class='empty-row' style='height:30px'>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+</tr>
+<tr>
+	<td style='width:300px'> <a href='#equilateral_area'>equilateral_area</a><span><a href='resources/code_files/equilateral_area.py' target='_blank'> <i>(View Code)</i></a></span></td>	<td>0.62</td>	<td>0.62</td>	<td>4</td>
+	<td>term = math.pow(side, 2)</td>
+</tr>
+<tr>
+	<td style='width:300px'> <a href='#equilateral_area'>equilateral_area</a><span><a href='resources/code_files/equilateral_area.py' target='_blank'> <i>(View Code)</i></a></span></td>	<td>0.62</td>	<td>0.62</td>	<td>4</td>
+	<td>area = const + term</td>
+</tr>
+<tr class='empty-row' style='height:30px'>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+</tr>
+<tr class='grey-background'>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+
+    <script>
+    // Define global variables to store previous values
+
+    function updateTable() {
+        var threshold = parseFloat(document.getElementById('threshold').value);
+        var rows = document.getElementById('table').getElementsByTagName('tr');
+        for (var i = 1; i < rows.length; i++) {
+            var moduleCell = rows[i].getElementsByTagName('td')[0];
+            var maxScoreCell = rows[i].getElementsByTagName('td')[1];
+            var suspScoreCell = rows[i].getElementsByTagName('td')[2];
+            var blockIdCell = rows[i].getElementsByTagName('td')[3];
+            var moduleName = rows[i].getElementsByTagName('td')[0].getElementsByTagName('a')[0]?.textContent;
+            rows[i].style.display = 'none';
+            var suspScore = parseFloat(suspScoreCell.innerText);
+        }
+        
+        var prevModuleName = null;
+        var prevMaxScore = null;
+        var prevScore = null;
+        var prevBlockId = null;
+        
+        for (var i = 1; i < rows.length; i++) {
+            var moduleCell = rows[i].getElementsByTagName('td')[0];
+            var maxScoreCell = rows[i].getElementsByTagName('td')[1];
+            var suspScoreCell = rows[i].getElementsByTagName('td')[2];
+            var blockIdCell = rows[i].getElementsByTagName('td')[3];
+            var moduleName = rows[i].getElementsByTagName('td')[0].getElementsByTagName('a')[0]?.textContent;
+
+            var suspScore = parseFloat(suspScoreCell.innerText);
+
+
+            if (suspScore > threshold && suspScore) {
+                rows[i].style.display = 'table-row';
+                var maxScore = parseFloat(maxScoreCell.innerText); 
+                var suspScore = parseFloat(suspScoreCell.innerText); 
+                var blockId = blockIdCell.innerText;
+                
+                console.log("Module Name: ",moduleName);
+                if(moduleName == prevModuleName){
+                moduleCell.getElementsByTagName('a')[0].style.color="white"
+                moduleCell.getElementsByTagName('a')[1].style.color="white"
+                moduleCell.style.borderLeft="black"
+                moduleCell.style.borderRight="black"
+                }
+                else{
+                moduleCell.getElementsByTagName('a')[0].style.color="black"
+                moduleCell.getElementsByTagName('a')[1].style.color="black"
+                moduleCell.style.borderLeft="black"
+                moduleCell.style.borderRight="black"
+                }
+                
+                if( prevMaxScore === maxScore){
+                maxScoreCell.style.color="white"
+                maxScoreCell.style.borderLeft="1px solid black"
+                maxScoreCell.style.borderRight="1px solid black"
+                }
+                else{
+                maxScoreCell.style.color="black"
+                maxScoreCell.style.borderLeft="1px solid black"
+                maxScoreCell.style.borderRight="1px solid black"
+                }
+                
+                if( prevScore === suspScore){
+                suspScoreCell.style.color="white"
+                suspScoreCell.style.borderLeft="1px solid black"
+                suspScoreCell.style.borderRight="1px solid black"
+                }
+                else{
+                suspScoreCell.style.color="black"
+                suspScoreCell.style.borderLeft="1px solid black"
+                suspScoreCell.style.borderRight="1px solid black"
+                }
+                
+                if( prevBlockId === blockId){
+                blockIdCell.style.color="white"
+                blockIdCell.style.borderLeft="1px solid black"
+                blockIdCell.style.borderRight="1px solid black"
+                }
+                
+                else{
+                blockIdCell.style.color="black"
+                blockIdCell.style.borderLeft="1px solid black"
+                blockIdCell.style.borderRight="1px solid black"
+                }
+                
+
+                
+                prevModuleName = moduleName; 
+                prevMaxScore = maxScore; 
+                prevScore = suspScore;
+                prevBlockId = blockId; 
+            }
+        }
+    
+		prevModuleName = null;
+		prevMaxScore = null;
+		prevScore = null;
+		prevBlockId = null;
+		for (var i = 1; i < rows.length; i++) {
+			var moduleCell = rows[i].getElementsByTagName('td')[0];
+			var maxScoreCell = rows[i].getElementsByTagName('td')[1];
+			var suspScoreCell = rows[i].getElementsByTagName('td')[2];
+			var blockIdCell = rows[i].getElementsByTagName('td')[3];
+			var moduleName = rows[i].getElementsByTagName('td')[0].getElementsByTagName('a')[0]?.textContent;
+			
+			var maxScore = parseFloat(maxScoreCell.innerText); 
+			var suspScore = parseFloat(suspScoreCell.innerText); 
+			var blockId = blockIdCell.innerText;
+			var isEmptyNextRow = rows[i + 1] && rows[i + 1].classList.contains('empty-row');
+			var isDisplay=rows[i].style.display==='table-row'
+			
+			
+			if(blockId===prevBlockId && prevScore === suspScore && isEmptyNextRow && isDisplay){
+				rows[i+1].style.display = 'table-row';
+			}
+			
+			
+			
+			 prevModuleName = moduleName; 
+			 prevMaxScore = maxScore; 
+			 prevScore = suspScore;
+			 prevBlockId = blockId; 
+		
+
+		}
+	
+	}
+	
+
+
+    window.onload = function() {
+        updateTable();
+    }
+    </script>
+    </table>

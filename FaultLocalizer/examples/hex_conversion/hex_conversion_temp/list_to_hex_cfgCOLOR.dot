@@ -1,0 +1,92 @@
+digraph clusterlist_to_hex {
+	graph [bb="0,0,619.68,415.08",
+		label=list_to_hex,
+		lheight=0.22,
+		lp="309.84,11.875",
+		lwidth=0.85,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>-1,-1</font>>
+	];
+	node [label="\N",
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>-1,-1</font>>
+	];
+	1	[height=0.77585,
+		label="1. results = []",
+		pos="324.34,371.4",
+		width=1.5075,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>11,11</font>>,
+		xlp="254.7,407.21"];
+	2	[height=0.5,
+		label="2. for num in decimal_nums:
+",
+		pos="324.34,288.47",
+		width=3.2342,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>55,55</font>>,
+		xlp="192.54,314.35"];
+	1 -> 2	[color=blue,
+		label_bgcolor=white,
+		pos="e,324.34,306.95 324.34,343 324.34,335.09 324.34,326.42 324.34,318.41",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     11,11  <br/><br/></font>>,
+		xlp="295.84,333.17"];
+	3	[height=0.77585,
+		label="3. if num % 2 == 0:",
+		pos="407.34,175.04",
+		width=2.1852,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>44,44</font>>,
+		xlp="313.3,210.85"];
+	2 -> 3	[color=blue,
+		label="decimal_nums\nc[3]",
+		label_bgcolor=white,
+		lp="412.47,236.72",
+		pos="e,387.81,202.26 336.95,270.55 348.62,254.89 366.33,231.1 381.07,211.31",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     44,44  <br/><br/></font>>,
+		xlp="334.1,243.98"];
+	4	[height=0.5,
+		label="4. return results
+",
+		pos="242.34,175.04",
+		width=1.8897,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>11,11</font>>,
+		xlp="158.94,164.92"];
+	2 -> 4	[color=blue,
+		label_bgcolor=white,
+		pos="e,254.91,193.12 311.89,270.55 298.52,252.39 277.12,223.31 261.59,202.2",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     11,11  <br/><br/></font>>,
+		xlp="254.84,239.63"];
+	5	[height=0.77585,
+		label="5. results.append(to_hex(num - 1))",
+		pos="169.34,51.681",
+		width=3.8498,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>26,43</font>>,
+		xlp="15.375,87.486"];
+	3 -> 5	[color=blue,
+		label="\"num % 2 == 0\"\nc[4]",
+		label_bgcolor=white,
+		lp="346.84,113.36",
+		pos="e,210.76,78.715 355.3,153.79 337.63,146.49 317.92,137.88 300.34,129.11 273.32,115.63 244.21,98.883 220.32,84.507",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     26,43  <br/><br/></font>>,
+		xlp="252.92,127.21"];
+	7	[height=0.77585,
+		label="7. results.append(to_hex(num))",
+		pos="494.34,51.681",
+		width=3.4815,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>18,1</font>>,
+		xlp="357.01,31.625"];
+	3 -> 7	[color=blue,
+		label="\"(num % 2 != 0)\"\nc[5]",
+		label_bgcolor=white,
+		lp="453.47,113.36",
+		pos="e,427.54,75.492 399.6,147.04 396.75,131.48 396.11,112.19 405.09,97.611 408.65,91.84 413.2,86.783 418.36,82.358",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     18,1  <br/><br/></font>>,
+		xlp="379.98,89.719"];
+	5 -> 2	[color=blue,
+		label_bgcolor=white,
+		pos="e,265.13,272.65 160.4,79.856 151.64,111.78 142.62,165.16 165.34,202.97 184.81,235.37 221.36,256.01 254.51,268.78",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     26,43  <br/><br/></font>>,
+		xlp="138.24,213.11"];
+	7 -> 2	[color=blue,
+		label_bgcolor=white,
+		pos="e,404.29,275.07 500.59,79.917 506.37,110.96 511.81,162.63 495.34,202.97 484.76,228.9 479.75,237.09 456.34,252.47 443.83,260.7 429.45,\
+266.99 414.89,271.81",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     18,1  <br/><br/></font>>,
+		xlp="470.21,210.87"];
+}

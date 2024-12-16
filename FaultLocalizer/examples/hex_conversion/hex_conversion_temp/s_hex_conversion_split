@@ -1,0 +1,22 @@
+digraph clusterhex_conversion {
+	graph [label=hex_conversion]
+	1 [label="c[11] += 1
+validated_nums = []
+"]
+	2 [label="for num in decimal_nums:
+"]
+	3 [label="c[6] += 1
+if 0 <= num <= 1000000:
+"]
+	5 [label="c[7] += 1
+validated_nums.append(num)
+"]
+	5 -> 2 [label=""]
+	3 -> 5 [label="0 <= num <= 1000000"]
+	3 -> 2 [label="(0 > num)"]
+	2 -> 3 [label=decimal_nums]
+	4 [label="return list_to_hex(validated_nums)
+"]
+	2 -> 4 [label=""]
+	1 -> 2 [label=""]
+}

@@ -1,0 +1,5 @@
+1.	Input MR1: Adding special characters to the existing password.		
+	Output MR1: The expected output should be = to the output of  actual input	
+		
+2.	Input MR1: After permuting the letters f the word
+	Output MR1: The expected output should be = to the output of  actual input

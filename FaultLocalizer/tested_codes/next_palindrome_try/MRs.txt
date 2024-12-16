@@ -1,0 +1,6 @@
+1.	Input  MR1: Adding 1 to each digit will create a data set that will be converted in a palindrome after running the code.		
+	Output MR1: The expected output should be a palindrome >= palindrome than the output of  actual input.
+   		
+2.	Input MR2: Permuting the elements will create a data set that will be converted in a palindrome after running the code.		
+	Output MR2: The expected output should be a palindrome= palindrome than the output of  actual input
+   

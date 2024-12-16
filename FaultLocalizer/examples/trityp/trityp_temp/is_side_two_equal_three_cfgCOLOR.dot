@@ -1,0 +1,32 @@
+digraph clusteris_side_two_equal_three {
+	graph [bb="0,0,261.55,241",
+		label=is_side_two_equal_three,
+		lheight=0.22,
+		lp="130.78,11.875",
+		lwidth=1.93,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>-1,-1</font>>
+	];
+	node [label="\N",
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>-1,-1</font>>
+	];
+	1	[height=0.77585,
+		label="1. if type_code >= 0:",
+		pos="139.4,197.31",
+		width=2.3619,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>0,4</font>>,
+		xlp="45.748,233.12"];
+	2	[height=1.0852,
+		label="2. type_code = type_code + 4
+return type_code",
+		pos="139.4,62.817",
+		width=3.3931,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>0,4</font>>,
+		xlp="8.625,109.76"];
+	1 -> 2	[color=red,
+		label="\"type_code >= 0\"\nc[2]",
+		label_bgcolor=white,
+		lp="190.4,135.63",
+		pos="e,139.4,102.22 139.4,169.18 139.4,153.19 139.4,132.47 139.4,113.64",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     0,4  <br/><br/></font>>,
+		xlp="117.65,143.6"];
+}

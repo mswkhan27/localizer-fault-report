@@ -1,0 +1,119 @@
+[
+  {
+    "Module_name": "multiply_xy",
+    "Max_score": 0.71,
+    "Block_Info": [
+      {
+        "Block ID": 5,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "for i in range(abs(x)):"
+          }
+        ]
+      },
+      {
+        "Block ID": 6,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "if x >= 0:"
+          }
+        ]
+      },
+      {
+        "Block ID": 6,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "if x >= 0:"
+          }
+        ]
+      },
+      {
+        "Block ID": 8,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "rxy = rxy + y"
+          }
+        ]
+      },
+      {
+        "Block ID": 6,
+        "Susp. score": 0.71,
+        "Statements_info": [
+          {
+            "statement": "if x >= 0:"
+          }
+        ]
+      },
+      {
+        "Block ID": 10,
+        "Susp. score": 0.71,
+        "Statements_info": [
+          {
+            "statement": " rxy = -(rxy + y)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Module_name": "multiply_rxy_z",
+    "Max_score": 0,
+    "Block_Info": [
+      {
+        "Block ID": 5,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "for j in range(abs(z)):"
+          }
+        ]
+      },
+      {
+        "Block ID": 6,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "rxyz = rxyz + rxy"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Module_name": "multiply",
+    "Max_score": 0,
+    "Block_Info": [
+      {
+        "Block ID": 1,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "print('Inputs: ', x, y, z)"
+          },
+          {
+            "statement": "rxy = multiply_xy(x, y)"
+          },
+          {
+            "statement": "if rxy == 0:"
+          }
+        ]
+      },
+      {
+        "Block ID": 4,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "rxyz = multiply_rxy_z(rxy, z)"
+          },
+          {
+            "statement": "print('multiply done', rxyz)"
+          }
+        ]
+      }
+    ]
+  }
+]

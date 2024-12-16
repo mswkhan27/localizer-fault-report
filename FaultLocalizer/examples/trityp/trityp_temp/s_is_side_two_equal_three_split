@@ -1,0 +1,11 @@
+digraph clusteris_side_two_equal_three {
+	graph [label=is_side_two_equal_three]
+	1 [label="c[19] += 1
+if type_code >= 0:
+"]
+	2 [label="c[2] += 1
+type_code = type_code + 4
+return type_code
+"]
+	1 -> 2 [label="type_code >= 0"]
+}

@@ -1,0 +1,281 @@
+[
+  {
+    "Module_name": "display_type_code",
+    "Max_score": 0,
+    "Block_Info": [
+      {
+        "Block ID": 1,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "if n:"
+          }
+        ]
+      },
+      {
+        "Block ID": 2,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "return n"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Module_name": "is_side_two_equal_three",
+    "Max_score": 1.0,
+    "Block_Info": [
+      {
+        "Block ID": 1,
+        "Susp. score": 1.0,
+        "Statements_info": [
+          {
+            "statement": "if type_code >= 0:"
+          }
+        ]
+      },
+      {
+        "Block ID": 2,
+        "Susp. score": 1.0,
+        "Statements_info": [
+          {
+            "statement": "type_code = type_code + 4"
+          },
+          {
+            "statement": "return type_code"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Module_name": "is_side_one_equal_two",
+    "Max_score": 0,
+    "Block_Info": [
+      {
+        "Block ID": 1,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "if type_code >= 0:"
+          }
+        ]
+      },
+      {
+        "Block ID": 2,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "type_code = type_code + 1"
+          },
+          {
+            "statement": "return type_code"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Module_name": "is_side_one_equal_three",
+    "Max_score": 0,
+    "Block_Info": [
+      {
+        "Block ID": 1,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "if type_code >= 0:"
+          }
+        ]
+      },
+      {
+        "Block ID": 2,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "type_code = type_code + 2"
+          },
+          {
+            "statement": "return type_code"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Module_name": "trityp",
+    "Max_score": 1.0,
+    "Block_Info": [
+      {
+        "Block ID": 1,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "if i == 0 or j == 0 or k == 0:"
+          }
+        ]
+      },
+      {
+        "Block ID": 4,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "type_code = 0"
+          },
+          {
+            "statement": "if i == j:"
+          }
+        ]
+      },
+      {
+        "Block ID": 4,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "type_code = 0"
+          },
+          {
+            "statement": "if i == j:"
+          }
+        ]
+      },
+      {
+        "Block ID": 5,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "type_code = is_side_one_equal_two(type_code)"
+          }
+        ]
+      },
+      {
+        "Block ID": 6,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "if i == k:"
+          }
+        ]
+      },
+      {
+        "Block ID": 7,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "type_code = is_side_one_equal_three(type_code)"
+          }
+        ]
+      },
+      {
+        "Block ID": 8,
+        "Susp. score": 1.0,
+        "Statements_info": [
+          {
+            "statement": "if j == k:"
+          }
+        ]
+      },
+      {
+        "Block ID": 9,
+        "Susp. score": 1.0,
+        "Statements_info": [
+          {
+            "statement": "type_code = is_side_two_equal_three(type_code)"
+          }
+        ]
+      },
+      {
+        "Block ID": 10,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": " if type_code == 0:"
+          }
+        ]
+      },
+      {
+        "Block ID": 11,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": " if i + j <= k or j + k <= i or i + k <= j:"
+          }
+        ]
+      },
+      {
+        "Block ID": 11,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": " if i + j <= k or j + k <= i or i + k <= j:"
+          }
+        ]
+      },
+      {
+        "Block ID": 26,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": " type_code = display_type_code(4)"
+          }
+        ]
+      },
+      {
+        "Block ID": 13,
+        "Susp. score": 1.0,
+        "Statements_info": [
+          {
+            "statement": " if type_code > 3:"
+          }
+        ]
+      },
+      {
+        "Block ID": 14,
+        "Susp. score": 1.0,
+        "Statements_info": [
+          {
+            "statement": " type_code = display_type_code(3)"
+          }
+        ]
+      },
+      {
+        "Block ID": 16,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": " if type_code == 1 and i + j > k:"
+          }
+        ]
+      },
+      {
+        "Block ID": 17,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": " type_code = display_type_code(2)"
+          }
+        ]
+      },
+      {
+        "Block ID": 19,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": " if type_code == 2 and i + k > j:"
+          }
+        ]
+      },
+      {
+        "Block ID": 20,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": " type_code = display_type_code(2)"
+          }
+        ]
+      }
+    ]
+  }
+]

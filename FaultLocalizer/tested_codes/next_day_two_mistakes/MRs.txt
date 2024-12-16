@@ -1,0 +1,12 @@
+############ PROBLEMS - not able to generate CFG, error Expecting value: line 1 column 3 (char 2) ###########
+
+1.	Input MR1: Increase the day by 2.	
+	Output MR1: The expected output should be = the output of  actual input with a difference of 2 between the dates.
+
+2.	Input MR1: Decrement the month by 1.		
+	Output MR1: The output should be = the output of the original input in terms of dates, but with a different month (the year might change or remain the same).
+
+[['03 01 2021'], ['12 03 2021'], ['27 04 2021'], ['07 05 2021'], ['22 06 2021'], ['01 08 2021'], ['18 02 2024'], ['10 08 2021'], ['19 09 2021'], ['04 10 2021'], ['17 11 2021'], ['24 12 2021'], ['09 02 2028'], ['04 12 2021'], ['10 02 2024'], ['18 03 2025'], ['07 04 2026'], ['23 05 2027'], ['15 06 2028'], ['30 07 2029'], ['14 08 2030'], ['03 09 2031'], ['12 10 2032'], ['25 11 2033'], ['13 02 2028'], ['31 02 2030']]
+[['17 02 2021'], ['16 02 2022'], ['14 02 2023'], ['20 02 2025'], ['15 02 2026'], ['23 02 2027'], ['21 02 2029'], ['22 01 2023'], ['28 02 2025'], ['19 02 2026'], ['09 02 2027'], ['20 02 2029'], ['11 02 2031']]
+
+next_day inputs

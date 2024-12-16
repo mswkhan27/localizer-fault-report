@@ -1,0 +1,90 @@
+digraph clusterto_hex {
+	graph [bb="0,0,503.4,459.63",
+		label=to_hex,
+		lheight=0.22,
+		lp="251.7,11.875",
+		lwidth=0.53,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>-1,-1</font>>
+	];
+	node [label="\N",
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>-1,-1</font>>
+	];
+	1	[height=0.77585,
+		label="1. if n == 0:",
+		pos="152.88,415.95",
+		width=1.3602,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>44,44</font>>,
+		xlp="88.539,451.76"];
+	2	[height=0.77585,
+		label="2. return '0'",
+		pos="116.88,292.59",
+		width=1.3602,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>0,0</font>>,
+		xlp="59.289,328.4"];
+	1 -> 2	[label="\"n == 0\"\nc[1]",
+		label_bgcolor=white,
+		lp="164.63,354.27",
+		pos="e,124.85,320.45 144.89,388.02 139.95,371.36 133.54,349.74 128.09,331.38",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     0,0  <br/><br/></font>>,
+		xlp="113.16,362.23"];
+	3	[height=0.5,
+		label="3. hex_str = ''
+",
+		pos="245.88,292.59",
+		width=1.7234,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>44,44</font>>,
+		xlp="199.21,318.47"];
+	1 -> 3	[color=blue,
+		label="(n != 0)",
+		label_bgcolor=white,
+		lp="237.26,354.27",
+		pos="e,234.87,310.71 175.44,390.7 181.28,384.12 187.45,376.92 192.88,370.02 205.58,353.89 218.74,334.93 228.77,319.93",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     44,44  <br/><br/></font>>,
+		xlp="220.83,343.97"];
+	5	[height=0.5,
+		label="5. while n > 0:
+",
+		pos="245.88,209.66",
+		width=1.7511,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>117,150</font>>,
+		xlp="160.72,235.54"];
+	3 -> 5	[color=blue,
+		label_bgcolor=white,
+		pos="e,245.88,228.08 245.88,274.43 245.88,264.3 245.88,251.23 245.88,239.55",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     44,44  <br/><br/></font>>,
+		xlp="217.38,259.22"];
+	6	[height=1.3946,
+		label="6. x = n % 16
+hex_str = to_hex_digit(x) + hex_str
+n = n // 16",
+		pos="189.88,73.956",
+		width=4.2328,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>73,106</font>>,
+		xlp="18.75,132.04"];
+	5 -> 6	[color=blue,
+		label="\"n > 0\"\nc[2]",
+		label_bgcolor=white,
+		lp="211.51,157.91",
+		pos="e,181.07,124.56 211.42,194.15 203.16,188.95 195.37,182.2 190.63,173.66 184.33,162.31 181.69,149.02 181.1,135.95",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     73,106  <br/><br/></font>>,
+		xlp="154.07,170.97"];
+	7	[height=0.5,
+		label="7. return hex_str
+",
+		pos="431.88,73.956",
+		width=1.9867,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>44,44</font>>,
+		xlp="375.73,99.831"];
+	5 -> 7	[color=blue,
+		label="(n <= 0)",
+		label_bgcolor=white,
+		lp="357.13,157.91",
+		pos="e,409.07,91.35 268.32,192.53 301.18,168.91 362.58,124.77 400.09,97.812",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     44,44  <br/><br/></font>>,
+		xlp="310.2,134.07"];
+	6 -> 5	[color=blue,
+		label_bgcolor=white,
+		pos="e,243.91,191.23 222.91,123.45 226.27,129.59 229.36,135.91 231.88,142.16 236.71,154.14 239.97,168.04 242.12,180.03",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     73,106  <br/><br/></font>>,
+		xlp="268.64,164.43"];
+}

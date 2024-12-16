@@ -1,0 +1,7 @@
+######  PROBLEMS- CFG doesn't indicate the bug properly #####
+
+1. Input MR1: Apply a permutation to the elements of the array.	
+   Output MR1: The expected output should be = to the output of  actual input.	
+
+2.	Input MR2: Remove 1 element from the initial array.			
+	Output MR2: The expected output should be = to the output of  actual input without containing the removed element.				

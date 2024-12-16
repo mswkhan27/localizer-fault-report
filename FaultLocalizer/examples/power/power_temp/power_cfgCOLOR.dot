@@ -1,0 +1,183 @@
+digraph clusterpower {
+	graph [bb="0,0,1098.9,925.37",
+		label=power,
+		lheight=0.22,
+		lp="549.44,11.875",
+		lwidth=0.49,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>-1,-1</font>>
+	];
+	node [label="\N",
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>-1,-1</font>>
+	];
+	1	[height=2.0133,
+		label="1. uMinusOne = u - 1
+numerator = uMinusOne
+lnTerm = uMinusOne
+result = uMinusOne
+if v == 0:",
+		pos="138.58,837.14",
+		width=2.9954,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>64,64</font>>,
+		xlp="15.375,917.49"];
+	2	[height=0.77585,
+		label="2. result = 1",
+		pos="93.584,573.1",
+		width=1.3602,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>31,5</font>>,
+		xlp="32.617,608.9"];
+	1 -> 2	[color=blue,
+		label="\"v == 0\"\nc[1]",
+		label_bgcolor=white,
+		lp="148.33,730.91",
+		pos="e,98.22,601.09 126.35,764.88 117.91,715.74 107.02,652.33 100.17,612.43",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     31,5  <br/><br/></font>>,
+		xlp="87.212,691.17"];
+	4	[height=1.0852,
+		label="4. lista = [0, 0]
+if int(v) == v and v > 0:",
+		pos="239.58,658.09",
+		width=2.8923,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>33,59</font>>,
+		xlp="120.09,626.9"];
+	1 -> 4	[color=blue,
+		label="\"(v != 0)\"\nc[2]",
+		label_bgcolor=white,
+		lp="233.96,730.91",
+		pos="e,218.11,696.74 176.91,768.95 188.74,748.22 201.51,725.83 212.42,706.71",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     33,59  <br/><br/></font>>,
+		xlp="169.05,740.65"];
+	3	[height=0.5,
+		label="3. return result
+",
+		pos="126.58,41.75",
+		width=1.7788,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>64,64</font>>,
+		xlp="47.172,67.625"];
+	2 -> 3	[color=blue,
+		label_bgcolor=white,
+		pos="e,117.96,59.713 92.512,544.86 91.043,505.14 88.584,429.01 88.584,364.21 88.584,364.21 88.584,364.21 88.584,168.23 88.584,133.13 \
+102.37,94.797 113.33,69.853",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     31,5  <br/><br/></font>>,
+		xlp="63.459,347.59"];
+	5	[height=0.77585,
+		label="5. result = 1",
+		pos="239.58,454.69",
+		width=1.3602,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>16,14</font>>,
+		xlp="175.24,490.49"];
+	4 -> 5	[color=blue,
+		label="\"int(v) == v and v > 0\"\nc[3]",
+		label_bgcolor=white,
+		lp="304.08,573.1",
+		pos="e,239.58,482.93 239.58,618.74 239.58,583.05 239.58,530.15 239.58,494.36",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     16,14  <br/><br/></font>>,
+		xlp="211.08,558.75"];
+	7	[height=2.0133,
+		label="7. uMinusOne = Decimal(u - 1)
+numerator = uMinusOne
+lnTerm = uMinusOne
+result = uMinusOne
+i = 1",
+		pos="473.58,454.69",
+		width=3.4521,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>17,45</font>>,
+		xlp="333.93,535.04"];
+	4 -> 7	[color=blue,
+		label="\"(not (int(v) == v and v > 0))\"\nc[5]",
+		label_bgcolor=white,
+		lp="504.96,573.1",
+		pos="e,437.19,524.3 318.61,632.38 337.48,624.24 356.72,613.89 372.58,601.03 395.34,582.58 415.16,557.71 431.07,533.77",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     17,45  <br/><br/></font>>,
+		xlp="415.84,595.7"];
+	11	[height=0.5,
+		label="11. for i in range(1, int(v) + 1):
+",
+		pos="239.58,327.21",
+		width=3.4283,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>42,35</font>>,
+		xlp="100.79,317.08"];
+	5 -> 11	[color=blue,
+		label_bgcolor=white,
+		pos="e,239.58,345.36 239.58,426.46 239.58,405.85 239.58,377.63 239.58,356.71",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     16,14  <br/><br/></font>>,
+		xlp="211.08,393.84"];
+	8	[height=0.5,
+		label="8. while lnTerm > Decimal(1e-16):
+",
+		pos="528.58,327.21",
+		width=3.8025,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>17,51</font>>,
+		xlp="376.32,353.08"];
+	7 -> 8	[color=blue,
+		label_bgcolor=white,
+		pos="e,521.11,345.26 504.14,383.98 508.54,373.93 512.84,364.13 516.57,355.62",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     17,45  <br/><br/></font>>,
+		xlp="484.04,372.69"];
+	11 -> 3	[color=blue,
+		label_bgcolor=white,
+		pos="e,125.24,60.204 206.68,309.45 198.03,304.24 189.04,298.05 181.58,291.21 161.54,272.82 155.22,267.15 145.58,241.71 123.86,184.34 \
+123.08,111.32 124.68,71.629",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     16,14  <br/><br/></font>>,
+		xlp="103.45,199.28"];
+	12	[height=0.77585,
+		label="12. result *= u",
+		pos="207.58,169.23",
+		width=1.478,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>26,21</font>>,
+		xlp="139,149.17"];
+	11 -> 12	[color=blue,
+		label="\"range(1, int(v) + 1)\"\nc[4]",
+		label_bgcolor=white,
+		lp="252.08,275.46",
+		pos="e,196.48,196.68 209.31,309.52 202.98,304.52 197.15,298.4 193.58,291.21 180.72,265.25 185.64,232.42 192.98,207.52",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     26,21  <br/><br/></font>>,
+		xlp="157.12,260.94"];
+	12 -> 11	[color=blue,
+		label_bgcolor=white,
+		pos="e,289.87,310.35 225.36,195.92 236.67,210.81 252.39,229.04 269.58,241.71 285.61,253.51 299.7,243.05 310.58,259.71 318.24,271.43 317.98,\
+279.32 310.58,291.21 307.53,296.11 303.57,300.35 299.07,304.01",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     26,21  <br/><br/></font>>,
+		xlp="241.13,249.62"];
+	9	[height=2.0133,
+		label="9. i += 1
+lnTerm *= uMinusOne * Decimal(-1) / Decimal(i)
+numerator = numerator * Decimal(-1) * uMinusOne
+lnTerm = numerator / Decimal(\
+i)
+result += lnTerm",
+		pos="492.58,169.23",
+		width=5.9417,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>0,6</font>>,
+		xlp="270.06,104.62"];
+	8 -> 9	[color=red,
+		label="\"lnTerm > Decimal(1e-16)\"\nc[6]",
+		label_bgcolor=white,
+		lp="451.71,275.46",
+		pos="e,387.16,232.55 432.79,313.96 407.15,308.63 384.32,301.23 376.33,291.21 362.82,274.23 367.01,256.88 379.76,240.83",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     0,6  <br/><br/></font>>,
+		xlp="375.96,296.38"];
+	10	[height=0.5,
+		label="10. result = Decimal(math.exp(v * float(result)))
+",
+		pos="911.58,169.23",
+		width=5.2025,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>17,45</font>>,
+		xlp="739.67,195.1"];
+	8 -> 10	[color=blue,
+		label="(lnTerm <= Decimal(1e-16))",
+		label_bgcolor=white,
+		lp="764.33,275.46",
+		pos="e,869.93,187.19 569.21,309.66 639.17,281.17 782.3,222.88 859.49,191.45",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     17,45  <br/><br/></font>>,
+		xlp="691.4,256.17"];
+	9 -> 8	[color=red,
+		label_bgcolor=white,
+		pos="e,530.38,308.81 523.96,241.29 525.82,247.43 527.41,253.63 528.58,259.71 530.95,271.91 531.32,285.6 530.96,297.38",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     0,6  <br/><br/></font>>,
+		xlp="552.27,282.36"];
+	10 -> 3	[color=blue,
+		label_bgcolor=white,
+		pos="e,190.61,43.24 873.79,151.12 834.95,134.34 772.31,109.47 715.58,96.75 534.19,56.08 314.8,45.926 201.87,43.467",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     17,45  <br/><br/></font>>,
+		xlp="507.51,74.394"];
+}

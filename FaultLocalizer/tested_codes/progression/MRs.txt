@@ -1,0 +1,6 @@
+1.	Input MR1: After adding 5 to each element in the array the program will return a progression for every initial arithmetical progression and the next number in sequence willl be.		
+	Output MR1: The expected output should be = to the output of  actual input for every arithmetical progression.	
+
+2.	Input MR2: Multiplying  each value contianed by the array with 2 will return a progression.		
+	Output MR2: The expected output should be = to double of the output of  actual input.
+	

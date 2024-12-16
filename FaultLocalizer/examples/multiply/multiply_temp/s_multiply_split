@@ -1,0 +1,19 @@
+digraph clustermultiply {
+	graph [label=multiply]
+	1 [label="c[10] += 1
+print('Inputs: ', x, y, z)
+rxy = multiply_xy(x, y)
+if rxy == 0:
+"]
+	2 [label="return 0
+"]
+	1 -> 2 [label="rxy == 0"]
+	4 [label="c[7] += 1
+rxyz = multiply_rxy_z(rxy, z)
+print('multiply done', rxyz)
+"]
+	3 [label="return rxyz
+"]
+	4 -> 3 [label=""]
+	1 -> 4 [label="(rxy != 0)"]
+}

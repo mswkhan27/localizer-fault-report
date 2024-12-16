@@ -1,0 +1,4 @@
+1.	Input MR1: Translate both circles by the same amount in any direction (translation vector translation vector (3, -2))
+	Output MR1: The expected output should be = to the output of  actual input		
+2.	Input MR2: Relationship of reflecting both circles across the x-axis, we'll transform the y-coordinates of the circle centers by negating them. This means each point (x, y) becomes (x, -y).				
+	Output MR2: The expected output should be = to the output of  actual input				

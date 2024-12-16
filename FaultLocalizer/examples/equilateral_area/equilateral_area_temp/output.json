@@ -1,0 +1,9 @@
+{
+  "equilateral_area": [],
+  "equilateral_area.equilateral_area": [
+    "math.pow",
+    "math.sqrt"
+  ],
+  "math.sqrt": [],
+  "math.pow": []
+}

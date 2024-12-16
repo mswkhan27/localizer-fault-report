@@ -1,0 +1,41 @@
+digraph clustermultiply {
+	graph [bb="0,0,377.46,327.04",
+		label=multiply,
+		lheight=0.22,
+		lp="188.73,11.875",
+		lwidth=0.61
+	];
+	node [label="\N"];
+	1	[height=1.3946,
+		label="c[10] += 1
+print('Inputs: ', x, y, z)
+rxy = multiply_xy(x, y)
+if rxy == 0:
+",
+		pos="102.53,276.84",
+		width=2.8481];
+	2	[height=0.5,
+		label="return 0
+",
+		pos="66.53,135.82",
+		width=1.0858];
+	1 -> 2	[label="rxy == 0",
+		lp="108.91,200.76",
+		pos="e,70.997,154.07 89.838,226.83 84.484,206.15 78.441,182.81 73.85,165.08"];
+	4	[height=1.0852,
+		label="c[7] += 1
+rxyz = multiply_rxy_z(rxy, z)
+print('multiply done', rxyz)
+",
+		pos="250.53,135.82",
+		width=3.5257];
+	1 -> 4	[label="(rxy != 0)",
+		lp="216.53,200.76",
+		pos="e,211.94,173.07 149.36,231.85 166.68,215.58 186.31,197.15 203.63,180.87"];
+	3	[height=0.5,
+		label="return rxyz
+",
+		pos="250.53,41.75",
+		width=1.4046];
+	4 -> 3	[pos="e,250.53,60.067 250.53,96.306 250.53,87.929 250.53,79.211 250.53,71.301"];
+}

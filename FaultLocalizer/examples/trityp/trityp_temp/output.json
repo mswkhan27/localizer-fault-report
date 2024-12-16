@@ -1,0 +1,13 @@
+{
+  "trityp": [],
+  "trityp.display_type_code": [],
+  "trityp.is_side_two_equal_three": [],
+  "trityp.is_side_one_equal_two": [],
+  "trityp.is_side_one_equal_three": [],
+  "trityp.trityp": [
+    "trityp.is_side_two_equal_three",
+    "trityp.display_type_code",
+    "trityp.is_side_one_equal_two",
+    "trityp.is_side_one_equal_three"
+  ]
+}

@@ -1,0 +1,32 @@
+digraph clustermerge {
+	graph [label=merge]
+	1 [label="c[8] += 1
+result = []
+i = 0
+j = 0
+"]
+	2 [label="while i < len(left) and j < len(right):
+"]
+	3 [label="c[1] += 1
+if left[i] <= right[j]:
+"]
+	5 [label="c[2] += 1
+result.append(left[i])
+i += 1
+"]
+	5 -> 2 [label=""]
+	3 -> 5 [label="left[i] <= right[j]"]
+	7 [label="c[3] += 1
+result.append(right[j])
+j += 1
+"]
+	7 -> 2 [label=""]
+	3 -> 7 [label="(left[i] > right[j])"]
+	2 -> 3 [label="i < len(left) and j < len(right)"]
+	4 [label="result.extend(left[i:])
+result.extend(right[j:])
+return result
+"]
+	2 -> 4 [label="(not (i < len(left) and j < len(right)))"]
+	1 -> 2 [label=""]
+}

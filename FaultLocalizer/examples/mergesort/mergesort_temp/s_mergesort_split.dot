@@ -1,0 +1,59 @@
+digraph clustermergesort {
+	graph [bb="0,0,542.34,383.93",
+		label=mergesort,
+		lheight=0.22,
+		lp="271.17,11.875",
+		lwidth=0.77
+	];
+	node [label="\N"];
+	1	[height=0.77585,
+		label="c[9] += 1
+if len(arr) <= 1:
+",
+		pos="161.17,356",
+		width=1.9789];
+	2	[height=0.77585,
+		label="c[4] += 1
+return arr
+",
+		pos="114.17,248.39",
+		width=1.3602];
+	1 -> 2	[label="len(arr) <= 1",
+		lp="176.42,302.19",
+		pos="e,125.97,275.9 149.19,328.08 143.51,315.32 136.64,299.88 130.49,286.07"];
+	4	[height=0.77585,
+		label="c[5] += 1
+if len(arr) % 2 == 0:
+",
+		pos="271.17,248.39",
+		width=2.4945];
+	1 -> 4	[label="(len(arr) > 1)",
+		lp="265.79,302.19",
+		pos="e,248.19,275.79 192.05,330.49 199.77,324.04 207.92,316.96 215.17,310.07 223.66,302 232.45,292.89 240.46,284.24"];
+	5	[height=1.7039,
+		label="c[6] += 1
+middle = len(arr) // 2
+left = mergesort(arr[:middle])
+right = mergesort(arr[middle:])
+return merge(left, right)
+",
+		pos="131.17,96.228",
+		width=3.6436];
+	4 -> 5	[label="len(arr) % 2 == 0",
+		lp="274.54,194.58",
+		pos="e,183.1,152.93 246.78,221.23 231.29,204.62 210.52,182.34 190.86,161.25"];
+	7	[height=2.0133,
+		label="c[7] += 1
+middle = len(arr) // 2
+left = mergesort(arr[:middle])
+right = mergesort(arr[middle:])
+left.reverse()
+return merge(left, \
+right)
+",
+		pos="411.17,96.228",
+		width=3.6436];
+	4 -> 7	[label="(len(arr) % 2 != 0)",
+		lp="390.17,194.58",
+		pos="e,361.79,163.7 305.08,222.17 312.62,216.02 320.39,209.25 327.17,202.46 336.45,193.15 345.72,182.85 354.51,172.45"];
+}

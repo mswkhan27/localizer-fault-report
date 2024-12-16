@@ -1,0 +1,74 @@
+The bug can cause an infinite loop due to improper handling of the search range when x is greater than arr[mid]. 
+
+This is what ChatGPT said, somehow the first and last value from the array don't produce a bad outcome, so the only test that we will need to investigate is the infinite recursion.
+
+?Element at the beginning of the array (x = arr[0]): If x is the first element of the array, the function may incorrectly return -1 because the initial binsearch(0, len(arr)) call passes end as the length of the array. Since end is exclusive, the correct call should be binsearch(0, len(arr) - 1).
+?Element at the end of the array (x = arr[-1]): Similar to the first case, if x is the last element of the array, the function may incorrectly return -1 due to the same reason mentioned above.
+
+
+Failed tests:
+arr = [5, 2, 4, 1, 3, 6]
+x = 7
+
+arr = [5, 2, 4, 1, 3, 6]
+x = 9
+
+arr = [2, 4, 6, 8, 10, 12]
+x = 7
+
+arr = [1, 2, 4, 5, 6]
+x = 9
+
+arr = [1, 2, 3, -1, -2, 4, 5, 6]
+x = 51
+
+arr = [1, 3, 5, 7, 9]
+x = 6
+
+arr = [10, 20, 30]
+x = 15
+
+arr = [-8, -5, -3, -2]
+x = 0
+
+arr = [-1, -2, 1, 2, 4, 6]
+x = 0
+
+arr = [1, 9, 13, 12, 15]
+x = 19
+
+
+
+
+
+Passed tests: 
+arr=[1, 2, 3, 4, 5]
+x = 1
+
+arr=[1, 2, 3, 4, 5]
+x = 5
+
+arr=[1, 2, 3, 4, 5]
+x = 3
+
+arr = [5, 2, 4, 1, 3, 6]
+x = 1
+
+arr = [2, 4, 6, 8, 10, 12]
+x = 10
+
+arr = [5]
+x = 5
+
+arr = []
+x = 5
+
+arr = [1, 3, 5, 7, 9]
+x = 3
+
+arr = [-1, -3, 5, 7, 9]
+x = 7
+
+arr = [2, 5]
+x = 5
+

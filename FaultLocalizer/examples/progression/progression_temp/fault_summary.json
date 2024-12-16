@@ -1,0 +1,86 @@
+[
+  {
+    "Module_name": "ap_gp_sequence",
+    "Max_score": 0.97,
+    "Block_Info": [
+      {
+        "Block ID": 1,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "if arr[0] == arr[1] == arr[2] == 0:"
+          }
+        ]
+      },
+      {
+        "Block ID": 2,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "return 'Wrong Numbers'"
+          }
+        ]
+      },
+      {
+        "Block ID": 1,
+        "Susp. score": 0.58,
+        "Statements_info": [
+          {
+            "statement": "if arr[0] == arr[1] == arr[2] == 0:"
+          }
+        ]
+      },
+      {
+        "Block ID": 4,
+        "Susp. score": 0.58,
+        "Statements_info": [
+          {
+            "statement": "if arr[1] - arr[0] == arr[2] - arr[1]:"
+          }
+        ]
+      },
+      {
+        "Block ID": 4,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "if arr[1] - arr[0] == arr[2] - arr[1]:"
+          }
+        ]
+      },
+      {
+        "Block ID": 5,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "n = 2 * arr[2] - arr[1]"
+          },
+          {
+            "statement": "return 'AP sequence, ' + 'Next number of the sequence: ' + str(n)"
+          }
+        ]
+      },
+      {
+        "Block ID": 4,
+        "Susp. score": 0.97,
+        "Statements_info": [
+          {
+            "statement": "if arr[1] - arr[0] == arr[2] - arr[1]:"
+          }
+        ]
+      },
+      {
+        "Block ID": 7,
+        "Susp. score": 0.97,
+        "Statements_info": [
+          {
+            "statement": "n = arr[2] ** 2 / arr[2]"
+          },
+          {
+            "statement": "return 'GP sequence, ' + 'Next number of the sequence:  ' + str(n)"
+          }
+        ]
+      }
+    ]
+  }
+]

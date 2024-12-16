@@ -1,0 +1,469 @@
+<html>
+<head>
+<meta charset='UTF-8'>
+<title> Localizer Simplified Report </title>
+<style>
+table, td, tr {
+   border: black solid 1px
+}
+</style>
+</head>
+<body><div id='top'></div
+<p>Generated: 2024-12-16 20:06:35.583435</p><h1><strong>mergesort</strong></h1><hr/>
+<h2><strong>Tests Inputs</strong></h2>
+<p>Passed: [[5, 2, 0, 4, 1, 3]], [[3, 1, 10, -5, 7, 2]], [[0, 0, 0, 0, 0]], [[2, 2, 2, 2, 2, 2]], [[-1, 1, -1, 1, -1, 1]], [[9, 4, 5, 8, 1, 6, 7, 0]], [[34, 23, 56, 90, 45, 12, 78, 89]], [[8, 7, 6, 9, 6, 7, 9, 8]], [[1, 8, 3, 4, 7, 5, 6, 2]], [[8, 5, 2, 9, 6, 7, 3, 15]], [[67, 12, 42, 34, 23, 89]], [[5, 2, 4, 1, 6, 3]], [[3, 1, 1, 5]], [[0, 0, 0, 0]], [[2, 2, 2, 2, 2]], [[42, 34, 23, 89, 12]]</p>
+<p>Failed: [[1, 4, 1, 5, 3]], [[8, 7, 9, 6, 2]], [[-5, -3, -2, -1, -4]], [[-3, 9, 5, -1, 7]], [[-5, -100, -25, -50, -10]], [[55, 44, 0, 99, 12]], [[75, 23, 1, 100, 50]], [[-22, -30, -15, -10, -8]], [[9, 2, 8, 7]], [[0, 1, 2, 3, 5]], [[-1, -2, -4, -5]], [[10, 3, 7, 2, 1]], [[5, -3, 7, 9]], [[1, -1, 1, -1, -1]], [[4, 5, 6, 7, 8, 9, 1]], [[23, 34, 12, 45, 56, 78, 89]]</p>
+<svg width="255pt" height="171pt"
+ viewBox="0.00 0.00 255.16 171.47" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 167.47)">
+<polygon fill="white" stroke="none" points="-4,4 -4,-167.47 251.16,-167.47 251.16,4 -4,4"/>
+<!-- mergesort.mergesort -->
+<g id="node1" class="node">
+<title>mergesort.mergesort</title>
+<g id="a_node1"><a xlink:href="simp_fault_report.html#mergesort" xlink:title="mergesort.mergesort\nMax Score: 0.5">
+<ellipse fill="none" stroke="red" stroke-width="2" cx="136.7" cy="-119.79" rx="92.45" ry="27.93"/>
+<text text-anchor="middle" x="136.7" y="-122.24" font-family="Times New Roman,serif" font-size="14.00">mergesort.mergesort</text>
+<text text-anchor="middle" x="136.7" y="-106.49" font-family="Times New Roman,serif" font-size="14.00">Max Score: 0.5</text>
+</a>
+</g>
+<text text-anchor="start" x="0" y="-134.42" font-family="Times New Roman,serif" font-size="14.00" fill="darkorange">182,146</text>
+</g>
+<!-- mergesort.mergesort&#45;&gt;mergesort.mergesort -->
+<g id="edge2" class="edge">
+<title>mergesort.mergesort&#45;&gt;mergesort.mergesort</title>
+<path fill="none" stroke="black" d="M212.08,-136.86C232.04,-135.89 247.16,-130.2 247.16,-119.79 247.16,-111.42 237.37,-106.1 223.14,-103.83"/>
+<polygon fill="black" stroke="black" points="223.88,-100.39 213.58,-102.87 223.18,-107.35 223.88,-100.39"/>
+</g>
+<!-- mergesort.merge -->
+<g id="node2" class="node">
+<title>mergesort.merge</title>
+<g id="a_node2"><a xlink:href="simp_fault_report.html#merge" xlink:title="mergesort.merge\nMax Score: 0.48">
+<ellipse fill="none" stroke="black" stroke-width="2" cx="136.7" cy="-27.93" rx="77.07" ry="27.93"/>
+<text text-anchor="middle" x="136.7" y="-30.38" font-family="Times New Roman,serif" font-size="14.00">mergesort.merge</text>
+<text text-anchor="middle" x="136.7" y="-14.63" font-family="Times New Roman,serif" font-size="14.00">Max Score: 0.48</text>
+</a>
+</g>
+<text text-anchor="start" x="28.88" y="-42.56" font-family="Times New Roman,serif" font-size="14.00" fill="darkorange">83,65</text>
+</g>
+<!-- mergesort.mergesort&#45;&gt;mergesort.merge -->
+<g id="edge1" class="edge">
+<title>mergesort.mergesort&#45;&gt;mergesort.merge</title>
+<path fill="none" stroke="black" d="M136.7,-91.34C136.7,-84.08 136.7,-76.09 136.7,-68.32"/>
+<polygon fill="black" stroke="black" points="140.2,-68.35 136.7,-58.35 133.2,-68.35 140.2,-68.35"/>
+</g>
+</g>
+</svg>
+<hr>
+<li><a href='#mergesort'>mergesort</a></li>
+<li><a href='#merge'>merge</a></li>
+<li><a href='#table'>Susp table</a></li><div id=mergesort>
+<hr>
+<h2>mergesort</h2>
+<div style='display: flex;flex-wrap: wrap;justify-content: flex-start;align-items: flex-start;max-width: 100%;overflow-x: hidden;'>
+<div style='flex: 1 1 auto;margin: 5px;overflow: hidden'>
+<object type='image/svg+xml' data=resources/images/mergesort_hm.svg ></object>
+</div>
+<div style='flex: 8;'>
+<object type='image/svg+xml' data=resources/images/simp_mergesort_cfg.svg style=' max-width: 100%;height: auto;'></object>
+</div></div>
+<a href=resources/images/simp_mergesort_cfg.svg target='_blank''>View CFG</a><br>
+<a href='#top'>Back</a>
+<hr>
+</div>
+<div id=merge>
+<hr>
+<h2>merge</h2>
+<div style='display: flex;flex-wrap: wrap;justify-content: flex-start;align-items: flex-start;max-width: 100%;overflow-x: hidden;'>
+<div style='flex: 1 1 auto;margin: 5px;overflow: hidden'>
+<object type='image/svg+xml' data=resources/images/merge_hm.svg ></object>
+</div>
+<div style='flex: 8;'>
+<object type='image/svg+xml' data=resources/images/simp_merge_cfg.svg style=' max-width: 100%;height: auto;'></object>
+</div></div>
+<a href=resources/images/simp_merge_cfg.svg target='_blank''>View CFG</a><br>
+<a href='#top'>Back</a>
+<hr>
+</div>
+<style>
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+}
+th, td {
+    border: none;
+    border-right: 1px solid;
+    text-align: left;
+    vertical-align: top; /* Align content to the top vertically */
+}
+td:first-child {
+    word-wrap: nowrap;
+}
+tr {
+    border: none;
+}
+.grey-background {
+    background-color: transparent;
+    border: none;
+}
+</style>
+<div>
+	<label for='threshold'>Threshold:</label>
+	<input type='number' id='threshold' name='threshold' step='0.01' value='0.57'>
+	<button onclick='updateTable()'>Update the Table</button>
+</div>
+<h2>Suspiciousness Score per basic blocks per the above threshold</h2><table id='table'>
+<tr>
+	<th style='border:1px solid black'>Module Name</th>
+	<th style='border:1px solid black'>Max Score</th>
+	<th style='border:1px solid black'>Susp. Score</th>
+	<th style='border:1px solid black'>Block ID</th>
+	<th style='border:1px solid black'>Statements</th>
+</tr>
+<tr>
+	<td style='width:300px'> <a href='#merge'>merge</a><span><a href='resources/code_files/merge.py' target='_blank'> <i>(View Code)</i></a></span></td>	<td>0.48</td>	<td>0</td>	<td>2</td>
+	<td>while i < len(left) and j < len(right):</td>
+</tr>
+<tr class='empty-row' style='height:30px'>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+</tr>
+<tr>
+	<td style='width:300px'> <a href='#merge'>merge</a><span><a href='resources/code_files/merge.py' target='_blank'> <i>(View Code)</i></a></span></td>	<td>0.48</td>	<td>0</td>	<td>3</td>
+	<td>if left[i] <= right[j]:</td>
+</tr>
+<tr class='empty-row' style='height:30px'>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+</tr>
+<tr>
+	<td style='width:300px'> <a href='#merge'>merge</a><span><a href='resources/code_files/merge.py' target='_blank'> <i>(View Code)</i></a></span></td>	<td>0.48</td>	<td>0</td>	<td>3</td>
+	<td>if left[i] <= right[j]:</td>
+</tr>
+<tr class='empty-row' style='height:30px'>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+</tr>
+<tr>
+	<td style='width:300px'> <a href='#merge'>merge</a><span><a href='resources/code_files/merge.py' target='_blank'> <i>(View Code)</i></a></span></td>	<td>0.48</td>	<td>0</td>	<td>5</td>
+	<td>result.append(left[i])</td>
+</tr>
+<tr>
+	<td style='width:300px'> <a href='#merge'>merge</a><span><a href='resources/code_files/merge.py' target='_blank'> <i>(View Code)</i></a></span></td>	<td>0.48</td>	<td>0</td>	<td>5</td>
+	<td>i += 1</td>
+</tr>
+<tr class='empty-row' style='height:30px'>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+</tr>
+<tr>
+	<td style='width:300px'> <a href='#merge'>merge</a><span><a href='resources/code_files/merge.py' target='_blank'> <i>(View Code)</i></a></span></td>	<td>0.48</td>	<td>0.48</td>	<td>3</td>
+	<td>if left[i] <= right[j]:</td>
+</tr>
+<tr class='empty-row' style='height:30px'>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+</tr>
+<tr>
+	<td style='width:300px'> <a href='#merge'>merge</a><span><a href='resources/code_files/merge.py' target='_blank'> <i>(View Code)</i></a></span></td>	<td>0.48</td>	<td>0.48</td>	<td>7</td>
+	<td>result.append(right[j])</td>
+</tr>
+<tr>
+	<td style='width:300px'> <a href='#merge'>merge</a><span><a href='resources/code_files/merge.py' target='_blank'> <i>(View Code)</i></a></span></td>	<td>0.48</td>	<td>0.48</td>	<td>7</td>
+	<td>j += 1</td>
+</tr>
+<tr class='empty-row' style='height:30px'>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+</tr>
+<tr class='grey-background'>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td style='width:300px'> <a href='#mergesort'>mergesort</a><span><a href='resources/code_files/mergesort.py' target='_blank'> <i>(View Code)</i></a></span></td>	<td>0.5</td>	<td>0.46</td>	<td>1</td>
+	<td>if len(arr) <= 1:</td>
+</tr>
+<tr class='empty-row' style='height:30px'>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+</tr>
+<tr>
+	<td style='width:300px'> <a href='#mergesort'>mergesort</a><span><a href='resources/code_files/mergesort.py' target='_blank'> <i>(View Code)</i></a></span></td>	<td>0.5</td>	<td>0.46</td>	<td>2</td>
+	<td>return arr</td>
+</tr>
+<tr class='empty-row' style='height:30px'>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+</tr>
+<tr>
+	<td style='width:300px'> <a href='#mergesort'>mergesort</a><span><a href='resources/code_files/mergesort.py' target='_blank'> <i>(View Code)</i></a></span></td>	<td>0.5</td>	<td>0</td>	<td>1</td>
+	<td>if len(arr) <= 1:</td>
+</tr>
+<tr class='empty-row' style='height:30px'>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+</tr>
+<tr>
+	<td style='width:300px'> <a href='#mergesort'>mergesort</a><span><a href='resources/code_files/mergesort.py' target='_blank'> <i>(View Code)</i></a></span></td>	<td>0.5</td>	<td>0</td>	<td>4</td>
+	<td>if len(arr) % 2 == 0:</td>
+</tr>
+<tr class='empty-row' style='height:30px'>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+</tr>
+<tr>
+	<td style='width:300px'> <a href='#mergesort'>mergesort</a><span><a href='resources/code_files/mergesort.py' target='_blank'> <i>(View Code)</i></a></span></td>	<td>0.5</td>	<td>0</td>	<td>4</td>
+	<td>if len(arr) % 2 == 0:</td>
+</tr>
+<tr class='empty-row' style='height:30px'>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+</tr>
+<tr>
+	<td style='width:300px'> <a href='#mergesort'>mergesort</a><span><a href='resources/code_files/mergesort.py' target='_blank'> <i>(View Code)</i></a></span></td>	<td>0.5</td>	<td>0</td>	<td>5</td>
+	<td>middle = len(arr) // 2</td>
+</tr>
+<tr>
+	<td style='width:300px'> <a href='#mergesort'>mergesort</a><span><a href='resources/code_files/mergesort.py' target='_blank'> <i>(View Code)</i></a></span></td>	<td>0.5</td>	<td>0</td>	<td>5</td>
+	<td>left = mergesort(arr[:middle])</td>
+</tr>
+<tr>
+	<td style='width:300px'> <a href='#mergesort'>mergesort</a><span><a href='resources/code_files/mergesort.py' target='_blank'> <i>(View Code)</i></a></span></td>	<td>0.5</td>	<td>0</td>	<td>5</td>
+	<td>right = mergesort(arr[middle:])</td>
+</tr>
+<tr>
+	<td style='width:300px'> <a href='#mergesort'>mergesort</a><span><a href='resources/code_files/mergesort.py' target='_blank'> <i>(View Code)</i></a></span></td>	<td>0.5</td>	<td>0</td>	<td>5</td>
+	<td>return merge(left, right)</td>
+</tr>
+<tr class='empty-row' style='height:30px'>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+</tr>
+<tr>
+	<td style='width:300px'> <a href='#mergesort'>mergesort</a><span><a href='resources/code_files/mergesort.py' target='_blank'> <i>(View Code)</i></a></span></td>	<td>0.5</td>	<td>0.5</td>	<td>4</td>
+	<td>if len(arr) % 2 == 0:</td>
+</tr>
+<tr class='empty-row' style='height:30px'>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+</tr>
+<tr>
+	<td style='width:300px'> <a href='#mergesort'>mergesort</a><span><a href='resources/code_files/mergesort.py' target='_blank'> <i>(View Code)</i></a></span></td>	<td>0.5</td>	<td>0.5</td>	<td>7</td>
+	<td>middle = len(arr) // 2</td>
+</tr>
+<tr>
+	<td style='width:300px'> <a href='#mergesort'>mergesort</a><span><a href='resources/code_files/mergesort.py' target='_blank'> <i>(View Code)</i></a></span></td>	<td>0.5</td>	<td>0.5</td>	<td>7</td>
+	<td>left = mergesort(arr[:middle])</td>
+</tr>
+<tr>
+	<td style='width:300px'> <a href='#mergesort'>mergesort</a><span><a href='resources/code_files/mergesort.py' target='_blank'> <i>(View Code)</i></a></span></td>	<td>0.5</td>	<td>0.5</td>	<td>7</td>
+	<td>right = mergesort(arr[middle:])</td>
+</tr>
+<tr>
+	<td style='width:300px'> <a href='#mergesort'>mergesort</a><span><a href='resources/code_files/mergesort.py' target='_blank'> <i>(View Code)</i></a></span></td>	<td>0.5</td>	<td>0.5</td>	<td>7</td>
+	<td>left.reverse()</td>
+</tr>
+<tr>
+	<td style='width:300px'> <a href='#mergesort'>mergesort</a><span><a href='resources/code_files/mergesort.py' target='_blank'> <i>(View Code)</i></a></span></td>	<td>0.5</td>	<td>0.5</td>	<td>7</td>
+	<td>return merge(left, \</td>
+</tr>
+<tr>
+	<td style='width:300px'> <a href='#mergesort'>mergesort</a><span><a href='resources/code_files/mergesort.py' target='_blank'> <i>(View Code)</i></a></span></td>	<td>0.5</td>	<td>0.5</td>	<td>7</td>
+	<td>right)</td>
+</tr>
+<tr class='empty-row' style='height:30px'>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+	<td colspan='1'></td>
+</tr>
+<tr class='grey-background'>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+
+    <script>
+    // Define global variables to store previous values
+
+    function updateTable() {
+        var threshold = parseFloat(document.getElementById('threshold').value);
+        var rows = document.getElementById('table').getElementsByTagName('tr');
+        for (var i = 1; i < rows.length; i++) {
+            var moduleCell = rows[i].getElementsByTagName('td')[0];
+            var maxScoreCell = rows[i].getElementsByTagName('td')[1];
+            var suspScoreCell = rows[i].getElementsByTagName('td')[2];
+            var blockIdCell = rows[i].getElementsByTagName('td')[3];
+            var moduleName = rows[i].getElementsByTagName('td')[0].getElementsByTagName('a')[0]?.textContent;
+            rows[i].style.display = 'none';
+            var suspScore = parseFloat(suspScoreCell.innerText);
+        }
+        
+        var prevModuleName = null;
+        var prevMaxScore = null;
+        var prevScore = null;
+        var prevBlockId = null;
+        
+        for (var i = 1; i < rows.length; i++) {
+            var moduleCell = rows[i].getElementsByTagName('td')[0];
+            var maxScoreCell = rows[i].getElementsByTagName('td')[1];
+            var suspScoreCell = rows[i].getElementsByTagName('td')[2];
+            var blockIdCell = rows[i].getElementsByTagName('td')[3];
+            var moduleName = rows[i].getElementsByTagName('td')[0].getElementsByTagName('a')[0]?.textContent;
+
+            var suspScore = parseFloat(suspScoreCell.innerText);
+
+
+            if (suspScore > threshold && suspScore) {
+                rows[i].style.display = 'table-row';
+                var maxScore = parseFloat(maxScoreCell.innerText); 
+                var suspScore = parseFloat(suspScoreCell.innerText); 
+                var blockId = blockIdCell.innerText;
+                
+                console.log("Module Name: ",moduleName);
+                if(moduleName == prevModuleName){
+                moduleCell.getElementsByTagName('a')[0].style.color="white"
+                moduleCell.getElementsByTagName('a')[1].style.color="white"
+                moduleCell.style.borderLeft="black"
+                moduleCell.style.borderRight="black"
+                }
+                else{
+                moduleCell.getElementsByTagName('a')[0].style.color="black"
+                moduleCell.getElementsByTagName('a')[1].style.color="black"
+                moduleCell.style.borderLeft="black"
+                moduleCell.style.borderRight="black"
+                }
+                
+                if( prevMaxScore === maxScore){
+                maxScoreCell.style.color="white"
+                maxScoreCell.style.borderLeft="1px solid black"
+                maxScoreCell.style.borderRight="1px solid black"
+                }
+                else{
+                maxScoreCell.style.color="black"
+                maxScoreCell.style.borderLeft="1px solid black"
+                maxScoreCell.style.borderRight="1px solid black"
+                }
+                
+                if( prevScore === suspScore){
+                suspScoreCell.style.color="white"
+                suspScoreCell.style.borderLeft="1px solid black"
+                suspScoreCell.style.borderRight="1px solid black"
+                }
+                else{
+                suspScoreCell.style.color="black"
+                suspScoreCell.style.borderLeft="1px solid black"
+                suspScoreCell.style.borderRight="1px solid black"
+                }
+                
+                if( prevBlockId === blockId){
+                blockIdCell.style.color="white"
+                blockIdCell.style.borderLeft="1px solid black"
+                blockIdCell.style.borderRight="1px solid black"
+                }
+                
+                else{
+                blockIdCell.style.color="black"
+                blockIdCell.style.borderLeft="1px solid black"
+                blockIdCell.style.borderRight="1px solid black"
+                }
+                
+
+                
+                prevModuleName = moduleName; 
+                prevMaxScore = maxScore; 
+                prevScore = suspScore;
+                prevBlockId = blockId; 
+            }
+        }
+    
+		prevModuleName = null;
+		prevMaxScore = null;
+		prevScore = null;
+		prevBlockId = null;
+		for (var i = 1; i < rows.length; i++) {
+			var moduleCell = rows[i].getElementsByTagName('td')[0];
+			var maxScoreCell = rows[i].getElementsByTagName('td')[1];
+			var suspScoreCell = rows[i].getElementsByTagName('td')[2];
+			var blockIdCell = rows[i].getElementsByTagName('td')[3];
+			var moduleName = rows[i].getElementsByTagName('td')[0].getElementsByTagName('a')[0]?.textContent;
+			
+			var maxScore = parseFloat(maxScoreCell.innerText); 
+			var suspScore = parseFloat(suspScoreCell.innerText); 
+			var blockId = blockIdCell.innerText;
+			var isEmptyNextRow = rows[i + 1] && rows[i + 1].classList.contains('empty-row');
+			var isDisplay=rows[i].style.display==='table-row'
+			
+			
+			if(blockId===prevBlockId && prevScore === suspScore && isEmptyNextRow && isDisplay){
+				rows[i+1].style.display = 'table-row';
+			}
+			
+			
+			
+			 prevModuleName = moduleName; 
+			 prevMaxScore = maxScore; 
+			 prevScore = suspScore;
+			 prevBlockId = blockId; 
+		
+
+		}
+	
+	}
+	
+
+
+    window.onload = function() {
+        updateTable();
+    }
+    </script>
+    </table>
+</body>
+</html>

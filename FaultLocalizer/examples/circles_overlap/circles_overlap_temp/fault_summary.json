@@ -1,0 +1,101 @@
+[
+  {
+    "Module_name": "circle_overlap_status",
+    "Max_score": 1.0,
+    "Block_Info": [
+      {
+        "Block ID": 1,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "d = math.sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2)"
+          },
+          {
+            "statement": "if d <= r1 - r2:"
+          }
+        ]
+      },
+      {
+        "Block ID": 4,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "if d <= r2 - r1:"
+          }
+        ]
+      },
+      {
+        "Block ID": 4,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "if d <= r2 - r1:"
+          }
+        ]
+      },
+      {
+        "Block ID": 7,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "if d < r1 + r2:"
+          }
+        ]
+      },
+      {
+        "Block ID": 7,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "if d < r1 + r2:"
+          }
+        ]
+      },
+      {
+        "Block ID": 8,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "return 'Circumference of C1 and C2 intersect'"
+          }
+        ]
+      },
+      {
+        "Block ID": 7,
+        "Susp. score": 1.0,
+        "Statements_info": [
+          {
+            "statement": "if d < r1 + r2:"
+          }
+        ]
+      },
+      {
+        "Block ID": 10,
+        "Susp. score": 1.0,
+        "Statements_info": [
+          {
+            "statement": " if d > r1 + r2:"
+          }
+        ]
+      },
+      {
+        "Block ID": 10,
+        "Susp. score": 1.0,
+        "Statements_info": [
+          {
+            "statement": " if d > r1 + r2:"
+          }
+        ]
+      },
+      {
+        "Block ID": 11,
+        "Susp. score": 1.0,
+        "Statements_info": [
+          {
+            "statement": " return 'Circumference of C1 and C2 will touch'"
+          }
+        ]
+      }
+    ]
+  }
+]

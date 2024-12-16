@@ -1,0 +1,134 @@
+[
+  {
+    "Module_name": "to_hex",
+    "Max_score": 0.53,
+    "Block_Info": [
+      {
+        "Block ID": 5,
+        "Susp. score": 0.53,
+        "Statements_info": [
+          {
+            "statement": "while n > 0:"
+          }
+        ]
+      },
+      {
+        "Block ID": 6,
+        "Susp. score": 0.53,
+        "Statements_info": [
+          {
+            "statement": "x = n % 16"
+          },
+          {
+            "statement": "hex_str = to_hex_digit(x) + hex_str"
+          },
+          {
+            "statement": "n = n // 16"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Module_name": "list_to_hex",
+    "Max_score": 0.67,
+    "Block_Info": [
+      {
+        "Block ID": 2,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "for num in decimal_nums:"
+          }
+        ]
+      },
+      {
+        "Block ID": 3,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "if num % 2 == 0:"
+          }
+        ]
+      },
+      {
+        "Block ID": 3,
+        "Susp. score": 0.67,
+        "Statements_info": [
+          {
+            "statement": "if num % 2 == 0:"
+          }
+        ]
+      },
+      {
+        "Block ID": 5,
+        "Susp. score": 0.67,
+        "Statements_info": [
+          {
+            "statement": "results.append(to_hex(num - 1))"
+          }
+        ]
+      },
+      {
+        "Block ID": 3,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "if num % 2 == 0:"
+          }
+        ]
+      },
+      {
+        "Block ID": 7,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "results.append(to_hex(num))"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Module_name": "hex_conversion",
+    "Max_score": 0,
+    "Block_Info": [
+      {
+        "Block ID": 2,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "for num in decimal_nums:"
+          }
+        ]
+      },
+      {
+        "Block ID": 3,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "if 0 <= num <= 1000000:"
+          }
+        ]
+      },
+      {
+        "Block ID": 3,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "if 0 <= num <= 1000000:"
+          }
+        ]
+      },
+      {
+        "Block ID": 5,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "validated_nums.append(num)"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,77 @@
+digraph clustermergesort {
+	graph [bb="0,0,573.09,431.18",
+		label=mergesort,
+		lheight=0.22,
+		lp="286.54,11.875",
+		lwidth=0.77,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>-1,-1</font>>
+	];
+	node [label="\N",
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>-1,-1</font>>
+	];
+	1	[height=0.77585,
+		label="1. if len(arr) <= 1:",
+		pos="197.92,387.5",
+		width=1.9789,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>182,146</font>>,
+		xlp="104.55,423.31"];
+	2	[height=0.77585,
+		label="2. return arr",
+		pos="144.92,264.14",
+		width=1.3602,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>99,81</font>>,
+		xlp="80.577,299.94"];
+	1 -> 2	[color=blue,
+		label="\"len(arr) <= 1\"\nc[4]",
+		label_bgcolor=white,
+		lp="213.17,325.82",
+		pos="e,152.84,292.18 181.05,359.88 177.63,353.97 174.23,347.65 171.42,341.57 165.72,329.25 160.54,315.33 156.31,302.78",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     99,81  <br/><br/></font>>,
+		xlp="136.5,334.45"];
+	4	[height=0.77585,
+		label="4. if len(arr) % 2 == 0:",
+		pos="301.92,264.14",
+		width=2.4945,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>83,65</font>>,
+		xlp="196.74,299.94"];
+	1 -> 4	[color=blue,
+		label="\"(len(arr) > 1)\"\nc[5]",
+		label_bgcolor=white,
+		lp="318.54,325.82",
+		pos="e,287.92,292.12 231.53,362.55 239.33,356.19 247.29,349.01 253.92,341.57 264.55,329.63 274.33,315.08 282.25,301.88",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     83,65  <br/><br/></font>>,
+		xlp="291.87,337.92"];
+	5	[height=1.7039,
+		label="5. middle = len(arr) // 2
+left = mergesort(arr[:middle])
+right = mergesort(arr[middle:])
+return merge(left, right)",
+		pos="161.92,96.229",
+		width=3.6436,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>65,39</font>>,
+		xlp="15.375,165.44"];
+	4 -> 5	[color=blue,
+		label="\"len(arr) % 2 == 0\"\nc[6]",
+		label_bgcolor=white,
+		lp="315.29,202.46",
+		pos="e,209.5,153.62 279.74,236.85 262.83,216.82 238.81,188.35 216.86,162.33",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     65,39  <br/><br/></font>>,
+		xlp="216.04,203.01"];
+	7	[height=2.0133,
+		label="7. middle = len(arr) // 2
+left = mergesort(arr[:middle])
+right = mergesort(arr[middle:])
+left.reverse()
+return merge(left, right)",
+		pos="441.92,96.229",
+		width=3.6436,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>18,26</font>>,
+		xlp="295.38,176.58"];
+	4 -> 7	[color=blue,
+		label="\"(len(arr) % 2 != 0)\"\nc[7]",
+		label_bgcolor=white,
+		lp="453.92,202.46",
+		pos="e,410.54,166.91 347.18,239.75 356.7,233.55 366.18,226.31 373.92,218.21 385.59,205.99 395.97,191.38 404.89,176.62",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     18,26  <br/><br/></font>>,
+		xlp="397.96,199.19"];
+}

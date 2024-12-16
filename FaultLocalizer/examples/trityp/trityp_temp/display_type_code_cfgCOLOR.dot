@@ -1,0 +1,31 @@
+digraph clusterdisplay_type_code {
+	graph [bb="0,0,124.73,218.72",
+		label=display_type_code,
+		lheight=0.22,
+		lp="62.366,11.875",
+		lwidth=1.48,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>-1,-1</font>>
+	];
+	node [label="\N",
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>-1,-1</font>>
+	];
+	1	[height=0.77585,
+		label="1. if n:",
+		pos="70.991,175.04",
+		width=1.4928,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>4,4</font>>,
+		xlp="8.625,210.85"];
+	2	[height=0.77585,
+		label="2. return n",
+		pos="70.991,51.681",
+		width=1.3602,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>4,4</font>>,
+		xlp="13.399,87.486"];
+	1 -> 2	[color=blue,
+		label="n\nc[1]",
+		label_bgcolor=white,
+		lp="82.241,113.36",
+		pos="e,70.991,79.826 70.991,146.81 70.991,130.41 70.991,109.28 70.991,91.191",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     4,4  <br/><br/></font>>,
+		xlp="49.241,121.19"];
+}

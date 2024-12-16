@@ -1,0 +1,13 @@
+{
+  "hex_conversion": [],
+  "hex_conversion.to_hex_digit": [],
+  "hex_conversion.to_hex": [
+    "hex_conversion.to_hex_digit"
+  ],
+  "hex_conversion.list_to_hex": [
+    "hex_conversion.to_hex"
+  ],
+  "hex_conversion.hex_conversion": [
+    "hex_conversion.list_to_hex"
+  ]
+}

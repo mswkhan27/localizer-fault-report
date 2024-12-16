@@ -1,0 +1,176 @@
+[
+  {
+    "Module_name": "power",
+    "Max_score": 0.67,
+    "Block_Info": [
+      {
+        "Block ID": 1,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "uMinusOne = u - 1"
+          },
+          {
+            "statement": "numerator = uMinusOne"
+          },
+          {
+            "statement": "lnTerm = uMinusOne"
+          },
+          {
+            "statement": "result = uMinusOne"
+          },
+          {
+            "statement": "if v == 0:"
+          }
+        ]
+      },
+      {
+        "Block ID": 2,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "result = 1"
+          }
+        ]
+      },
+      {
+        "Block ID": 1,
+        "Susp. score": 0.67,
+        "Statements_info": [
+          {
+            "statement": "uMinusOne = u - 1"
+          },
+          {
+            "statement": "numerator = uMinusOne"
+          },
+          {
+            "statement": "lnTerm = uMinusOne"
+          },
+          {
+            "statement": "result = uMinusOne"
+          },
+          {
+            "statement": "if v == 0:"
+          }
+        ]
+      },
+      {
+        "Block ID": 4,
+        "Susp. score": 0.67,
+        "Statements_info": [
+          {
+            "statement": "lista = [0, 0]"
+          },
+          {
+            "statement": "if int(v) == v and v > 0:"
+          }
+        ]
+      },
+      {
+        "Block ID": 4,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "lista = [0, 0]"
+          },
+          {
+            "statement": "if int(v) == v and v > 0:"
+          }
+        ]
+      },
+      {
+        "Block ID": 5,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "result = 1"
+          }
+        ]
+      },
+      {
+        "Block ID": 4,
+        "Susp. score": 0.59,
+        "Statements_info": [
+          {
+            "statement": "lista = [0, 0]"
+          },
+          {
+            "statement": "if int(v) == v and v > 0:"
+          }
+        ]
+      },
+      {
+        "Block ID": 7,
+        "Susp. score": 0.59,
+        "Statements_info": [
+          {
+            "statement": "uMinusOne = Decimal(u - 1)"
+          },
+          {
+            "statement": "numerator = uMinusOne"
+          },
+          {
+            "statement": "lnTerm = uMinusOne"
+          },
+          {
+            "statement": "result = uMinusOne"
+          },
+          {
+            "statement": "i = 1"
+          }
+        ]
+      },
+      {
+        "Block ID": 11,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": " for i in range(1, int(v) + 1):"
+          }
+        ]
+      },
+      {
+        "Block ID": 12,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": " result *= u"
+          }
+        ]
+      },
+      {
+        "Block ID": 8,
+        "Susp. score": 0.49,
+        "Statements_info": [
+          {
+            "statement": "while lnTerm > Decimal(1e-16):"
+          }
+        ]
+      },
+      {
+        "Block ID": 9,
+        "Susp. score": 0.49,
+        "Statements_info": [
+          {
+            "statement": "i += 1"
+          },
+          {
+            "statement": "lnTerm *= uMinusOne * Decimal(-1) / Decimal(i)"
+          },
+          {
+            "statement": "numerator = numerator * Decimal(-1) * uMinusOne"
+          },
+          {
+            "statement": "lnTerm = numerator / \\"
+          },
+          {
+            "statement": "Decimal(i)"
+          },
+          {
+            "statement": "result += lnTerm"
+          }
+        ]
+      }
+    ]
+  }
+]

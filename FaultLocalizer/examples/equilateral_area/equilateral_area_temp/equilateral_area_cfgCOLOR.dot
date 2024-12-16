@@ -1,0 +1,58 @@
+digraph clusterequilateral_area {
+	graph [bb="0,0,375.31,336.27",
+		label=equilateral_area,
+		lheight=0.22,
+		lp="187.66,11.875",
+		lwidth=1.19,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>-1,-1</font>>
+	];
+	node [label="\N",
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>-1,-1</font>>
+	];
+	1	[height=1.0852,
+		label="1. const = math.sqrt(3) / 4
+if side == 1:",
+		pos="144.76,281.45",
+		width=2.9217,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>10,10</font>>,
+		xlp="24.208,328.39"];
+	2	[height=0.77585,
+		label="2. return const",
+		pos="75.764,135.82",
+		width=1.6254,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>2,0</font>>,
+		xlp="8.625,171.62"];
+	1 -> 2	[color="#429E6A",
+		label="\"side == 1\"\nc[1]",
+		label_bgcolor=white,
+		lp="148.39,208.63",
+		pos="e,88.546,163.42 126.64,242.71 116.39,221.38 103.63,194.83 93.457,173.65",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     2,0  <br/><br/></font>>,
+		xlp="85.849,210.96"];
+	4	[height=1.0852,
+		label="4. term = math.pow(side, 2)
+area = const + term",
+		pos="263.76,135.82",
+		width=3.0985,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>8,10</font>>,
+		xlp="140.22,182.76"];
+	1 -> 4	[color=blue,
+		label="\"(side != 1)\"\nc[2]",
+		label_bgcolor=white,
+		lp="250.01,208.63",
+		pos="e,233.07,173.87 175.1,243.83 190.51,225.24 209.38,202.46 225.75,182.7",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     8,10  <br/><br/></font>>,
+		xlp="179.02,216.66"];
+	3	[height=0.5,
+		label="3. return area
+",
+		pos="263.76,41.75",
+		width=1.6402,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>8,10</font>>,
+		xlp="192.72,67.625"];
+	4 -> 3	[color=blue,
+		label_bgcolor=white,
+		pos="e,263.76,60.067 263.76,96.306 263.76,87.929 263.76,79.211 263.76,71.301",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     8,10  <br/><br/></font>>,
+		xlp="238.64,86.016"];
+}

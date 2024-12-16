@@ -1,0 +1,53 @@
+[
+  {
+    "Module_name": "equilateral_area",
+    "Max_score": 0.62,
+    "Block_Info": [
+      {
+        "Block ID": 1,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "const = math.sqrt(3) / 4"
+          },
+          {
+            "statement": "if side == 1:"
+          }
+        ]
+      },
+      {
+        "Block ID": 2,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "return const"
+          }
+        ]
+      },
+      {
+        "Block ID": 1,
+        "Susp. score": 0.62,
+        "Statements_info": [
+          {
+            "statement": "const = math.sqrt(3) / 4"
+          },
+          {
+            "statement": "if side == 1:"
+          }
+        ]
+      },
+      {
+        "Block ID": 4,
+        "Susp. score": 0.62,
+        "Statements_info": [
+          {
+            "statement": "term = math.pow(side, 2)"
+          },
+          {
+            "statement": "area = const + term"
+          }
+        ]
+      }
+    ]
+  }
+]

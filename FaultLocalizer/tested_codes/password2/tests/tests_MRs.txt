@@ -1,0 +1,2 @@
+[[["Short1"]], [["toolongpassword123"]], [["NoDigitsHere"]], [["nouppercase1"]], [[" "]], [["A123456"]], [["abcxyz"]], [["ABCDEFG"]], [["onlydigits12345"]], [["JustLetters"]]]
+[[["Tiger123@"]], [["Passw0rd#"]], [["Hello2024$"]], [["JavaC0de@"]], [["TechN0va#"]], [["RubyP1ne$"]], [["AlphaX7@"]], [["Byte9Code#"]], [["C0dingFun$"]], [["Zebra123@"]]]s

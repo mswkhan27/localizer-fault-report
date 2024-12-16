@@ -1,0 +1,80 @@
+digraph clusterhex_conversion {
+	graph [bb="0,0,586.73,415.08",
+		label=hex_conversion,
+		lheight=0.22,
+		lp="293.37,11.875",
+		lwidth=1.23,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>-1,-1</font>>
+	];
+	node [label="\N",
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>-1,-1</font>>
+	];
+	1	[height=0.77585,
+		label="1. validated_nums = []",
+		pos="356.23,371.4",
+		width=2.5092,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>11,11</font>>,
+		xlp="250.53,407.21"];
+	2	[height=0.5,
+		label="2. for num in decimal_nums:
+",
+		pos="356.23,288.47",
+		width=3.2342,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>55,55</font>>,
+		xlp="224.43,314.35"];
+	1 -> 2	[color=blue,
+		label_bgcolor=white,
+		pos="e,356.23,306.95 356.23,343 356.23,335.09 356.23,326.42 356.23,318.41",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     11,11  <br/><br/></font>>,
+		xlp="327.73,333.17"];
+	3	[height=0.77585,
+		label="3. if 0 <= num <= 1000000:",
+		pos="141.23,175.04",
+		width=3.069,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>44,44</font>>,
+		xlp="15.375,210.85"];
+	2 -> 3	[color=blue,
+		label="decimal_nums\nc[6]",
+		label_bgcolor=white,
+		lp="259.36,236.72",
+		pos="e,162,202.72 277.27,274.85 257.44,269.7 236.76,262.49 218.98,252.47 200.38,241.98 183.06,225.89 169.52,211.17",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     44,44  <br/><br/></font>>,
+		xlp="184.86,256.99"];
+	4	[height=0.5,
+		label="4. return list_to_hex(validated_nums)
+",
+		pos="418.23,175.04",
+		width=4.1352,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>11,11</font>>,
+		xlp="284.74,149.17"];
+	2 -> 4	[color=blue,
+		label_bgcolor=white,
+		pos="e,410.81,193.47 369.29,270.42 373.33,264.83 377.65,258.51 381.23,252.47 390.47,236.91 399.35,218.71 406.1,203.97",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     11,11  <br/><br/></font>>,
+		xlp="420.49,240.88"];
+	3 -> 2	[label="(0 > num)",
+		label_bgcolor=white,
+		lp="348.98,236.72",
+		pos="e,338.47,270.54 223,194.07 254.59,202.11 286.24,211.81 299.23,220.97 313.3,230.88 310.66,239.3 321.73,252.47 324.48,255.73 327.46,\
+259.05 330.49,262.29",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     0,0  <br/><br/></font>>,
+		xlp="310.45,207.25"];
+	5	[height=0.77585,
+		label="5. validated_nums.append(num)",
+		pos="368.23,51.681",
+		width=3.5552,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>44,44</font>>,
+		xlp="224.87,87.486"];
+	3 -> 5	[color=blue,
+		label="\"0 <= num <= 1000000\"\nc[7]",
+		label_bgcolor=white,
+		lp="350.23,113.36",
+		pos="e,320.92,77.978 187.44,149.34 223.14,130.25 272.74,103.73 310.96,83.3",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     44,44  <br/><br/></font>>,
+		xlp="225.34,121.71"];
+	5 -> 2	[color=blue,
+		label_bgcolor=white,
+		pos="e,447.07,276.91 446.92,74.077 521.79,98.557 617.36,143.12 576.23,202.97 549.48,241.91 502.1,262.91 458.15,274.24",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     44,44  <br/><br/></font>>,
+		xlp="448.33,260.99"];
+}

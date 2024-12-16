@@ -1,0 +1,152 @@
+[
+  {
+    "Module_name": "next_palindrome",
+    "Max_score": 0.97,
+    "Block_Info": [
+      {
+        "Block ID": 1,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "n = len(digit_list)"
+          },
+          {
+            "statement": "mid = n // 2"
+          },
+          {
+            "statement": "if n % 2 == 0:"
+          }
+        ]
+      },
+      {
+        "Block ID": 2,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "left_side = digit_list[:mid]"
+          },
+          {
+            "statement": "left_side_reverse = left_side[::-1]"
+          },
+          {
+            "statement": "candidate = left_side + left_side_reverse"
+          }
+        ]
+      },
+      {
+        "Block ID": 1,
+        "Susp. score": 0.97,
+        "Statements_info": [
+          {
+            "statement": "n = len(digit_list)"
+          },
+          {
+            "statement": "mid = n // 2"
+          },
+          {
+            "statement": "if n % 2 == 0:"
+          }
+        ]
+      },
+      {
+        "Block ID": 4,
+        "Susp. score": 0.97,
+        "Statements_info": [
+          {
+            "statement": "left_side = digit_list[:mid]"
+          },
+          {
+            "statement": "middle = digit_list[mid]"
+          },
+          {
+            "statement": "left_side_reverse = left_side[::-1]"
+          },
+          {
+            "statement": "candidate = left_side + [middle] + \\"
+          },
+          {
+            "statement": "left_side_reverse"
+          }
+        ]
+      },
+      {
+        "Block ID": 3,
+        "Susp. score": 0.38,
+        "Statements_info": [
+          {
+            "statement": "if candidate > digit_list:"
+          }
+        ]
+      },
+      {
+        "Block ID": 5,
+        "Susp. score": 0.38,
+        "Statements_info": [
+          {
+            "statement": "return candidate"
+          }
+        ]
+      },
+      {
+        "Block ID": 6,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "for i in range(mid - 1, -1, -1):"
+          }
+        ]
+      },
+      {
+        "Block ID": 8,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "if digit_list[i] < 9:"
+          }
+        ]
+      },
+      {
+        "Block ID": 8,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": "if digit_list[i] < 9:"
+          }
+        ]
+      },
+      {
+        "Block ID": 10,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": " digit_list[i] += 1"
+          },
+          {
+            "statement": "if i != n - i - 1:"
+          }
+        ]
+      },
+      {
+        "Block ID": 10,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": " digit_list[i] += 1"
+          },
+          {
+            "statement": "if i != n - i - 1:"
+          }
+        ]
+      },
+      {
+        "Block ID": 12,
+        "Susp. score": 0,
+        "Statements_info": [
+          {
+            "statement": " digit_list[n - i - 1] = digit_list[i]"
+          }
+        ]
+      }
+    ]
+  }
+]

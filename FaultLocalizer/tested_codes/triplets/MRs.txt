@@ -1,0 +1,8 @@
+1.	Input MR1: After permuting the elements of the array it will display the same pairs of numbers.	
+	Output MR1: The expected output should be = to the output of  actual input.	
+
+2.	Input MR2:If I compute the symmetric for each element in an array, the number of pairs or triplets whose sum equals zero remains unchanged, except that the sign of each element is reversed.		
+	  Output MR2: The expected output should be = to the output of  actual input but with opposite sings.
+
+3.	Input MR3: Multiply each digit of the array by 2.
+	Output MR3: The expected output should be = to the output of  actual input multiplyed by 2.

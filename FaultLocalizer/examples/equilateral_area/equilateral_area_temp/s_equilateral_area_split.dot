@@ -1,0 +1,41 @@
+digraph clusterequilateral_area {
+	graph [bb="0,0,358.06,304.77",
+		label=equilateral_area,
+		lheight=0.22,
+		lp="179.03,11.875",
+		lwidth=1.19
+	];
+	node [label="\N"];
+	1	[height=1.0852,
+		label="c[3] += 1
+const = math.sqrt(3) / 4
+if side == 1:
+",
+		pos="124.51,265.7",
+		width=2.9217];
+	2	[height=0.77585,
+		label="c[1] += 1
+return const
+",
+		pos="58.513,135.82",
+		width=1.6254];
+	1 -> 2	[label="side == 1",
+		lp="121.14,200.76",
+		pos="e,72.173,163.29 105.07,227.02 96.314,210.06 86.02,190.12 77.341,173.3"];
+	4	[height=1.0852,
+		label="c[2] += 1
+term = math.pow(side, 2)
+area = const + term
+",
+		pos="246.51,135.82",
+		width=3.0985];
+	1 -> 4	[label="(side != 1)",
+		lp="221.76,200.76",
+		pos="e,211.79,173.21 159.15,228.4 173.06,213.82 189.23,196.86 203.85,181.54"];
+	3	[height=0.5,
+		label="return area
+",
+		pos="246.51,41.75",
+		width=1.3769];
+	4 -> 3	[pos="e,246.51,60.067 246.51,96.306 246.51,87.929 246.51,79.211 246.51,71.301"];
+}

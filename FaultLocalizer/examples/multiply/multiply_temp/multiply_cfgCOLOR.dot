@@ -1,0 +1,59 @@
+digraph clustermultiply {
+	graph [bb="0,0,403.71,358.55",
+		label=multiply,
+		lheight=0.22,
+		lp="201.85,11.875",
+		lwidth=0.61,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>-1,-1</font>>
+	];
+	node [label="\N",
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>-1,-1</font>>
+	];
+	1	[height=1.3946,
+		label="1. print('Inputs: ', x, y, z)
+rxy = multiply_xy(x, y)
+if rxy == 0:",
+		pos="119.78,292.59",
+		width=2.8481,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>4,4</font>>,
+		xlp="8.625,350.67"];
+	2	[height=0.5,
+		label="2. return 0
+",
+		pos="83.782,135.82",
+		width=1.3491,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>0,0</font>>,
+		xlp="26.588,161.69"];
+	1 -> 2	[label="rxy == 0",
+		label_bgcolor=white,
+		lp="129.16,208.63",
+		pos="e,87.789,154.05 108.39,242.62 102.45,217.06 95.386,186.71 90.355,165.08",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     0,0  <br/><br/></font>>,
+		xlp="76.256,205.85"];
+	4	[height=1.0852,
+		label="4. rxyz = multiply_rxy_z(rxy, z)
+print('multiply done', rxyz)",
+		pos="276.78,135.82",
+		width=3.5257,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>4,4</font>>,
+		xlp="141.23,182.76"];
+	1 -> 4	[color=blue,
+		label="\"(rxy != 0)\"\nc[7]",
+		label_bgcolor=white,
+		lp="249.78,208.63",
+		pos="e,239.47,173.6 164.77,247.24 185.65,226.66 210.42,202.24 231.35,181.6",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     4,4  <br/><br/></font>>,
+		xlp="180.31,218.36"];
+	3	[height=0.5,
+		label="3. return rxyz
+",
+		pos="276.78,41.75",
+		width=1.6679,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>4,4</font>>,
+		xlp="208.11,67.625"];
+	4 -> 3	[color=blue,
+		label_bgcolor=white,
+		pos="e,276.78,60.067 276.78,96.306 276.78,87.929 276.78,79.211 276.78,71.301",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     4,4  <br/><br/></font>>,
+		xlp="255.03,86.016"];
+}

@@ -1,0 +1,1 @@
+{"input_project_path": "../examples/trityp/", "input_file_n": "trityp.py", "input_function": "trityp"}

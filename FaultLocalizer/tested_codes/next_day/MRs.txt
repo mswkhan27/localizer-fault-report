@@ -1,0 +1,5 @@
+1.	Input MR1: Increase the day by 2.	
+	Output MR1: The expected output should be = the output of  actual input with a difference of 2 between the dates.
+
+2.	Input MR1: Decrement the month by 1.		
+	Output MR1: The output should be = the output of the original input in terms of dates, but with a different month (the year might change or remain the same).

@@ -1,0 +1,24 @@
+digraph clusterap_gp_sequence {
+	graph [label=ap_gp_sequence]
+	1 [label="c[5] += 1
+if arr[0] == arr[1] == arr[2] == 0:
+"]
+	2 [label="c[1] += 1
+return 'Wrong Numbers'
+"]
+	1 -> 2 [label="arr[0] == arr[1] == arr[2] == 0"]
+	4 [label="c[2] += 1
+if arr[1] - arr[0] == arr[2] - arr[1]:
+"]
+	5 [label="c[3] += 1
+n = 2 * arr[2] - arr[1]
+return 'AP sequence, ' + 'Next number of the sequence: ' + str(n)
+"]
+	4 -> 5 [label="arr[1] - arr[0] == arr[2] - arr[1]"]
+	7 [label="c[4] += 1
+n = arr[2] ** 2 / arr[2]
+return 'GP sequence, ' + 'Next number of the sequence:  ' + str(n)
+"]
+	4 -> 7 [label="(arr[1] - arr[0] != arr[2] - arr[1])"]
+	1 -> 4 [label="(arr[0] != arr[1])"]
+}

@@ -1,0 +1,101 @@
+digraph clustermerge {
+	graph [bb="0,0,577.7,504.18",
+		label=merge,
+		lheight=0.22,
+		lp="288.85,11.875",
+		lwidth=0.47,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>-1,-1</font>>
+	];
+	node [label="\N",
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>-1,-1</font>>
+	];
+	1	[height=1.3946,
+		label="1. result = []
+i = 0
+j = 0",
+		pos="267.01,438.23",
+		width=1.4138,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>83,65</font>>,
+		xlp="200.73,496.31"];
+	2	[height=0.5,
+		label="2. while i < len(left) and j < len(right):
+",
+		pos="267.01,333.02",
+		width=4.1075,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>249,174</font>>,
+		xlp="97.012,358.89"];
+	1 -> 2	[color=blue,
+		label_bgcolor=white,
+		pos="e,267.01,351.42 267.01,387.74 267.01,379.18 267.01,370.55 267.01,362.78",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     83,65  <br/><br/></font>>,
+		xlp="238.51,377.4"];
+	3	[height=0.77585,
+		label="3. if left[i] <= right[j]:",
+		pos="377.01,208.45",
+		width=2.3619,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>166,109</font>>,
+		xlp="314.1,244.26"];
+	2 -> 3	[color=blue,
+		label="\"i < len(left) and j < len(right)\"\nc[1]",
+		label_bgcolor=white,
+		lp="455.38,281.27",
+		pos="e,376.49,236.52 328.66,316.29 338.55,311.46 347.86,305.18 355.01,297.02 366.84,283.51 372.48,264.55 375.11,247.73",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     166,109  <br/><br/></font>>,
+		xlp="329.52,290.1"];
+	4	[height=1.0852,
+		label="4. result.extend(left[i:])
+result.extend(right[j:])
+return result
+",
+		pos="166.01,208.45",
+		width=2.7891,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>83,65</font>>,
+		xlp="50.222,255.39"];
+	2 -> 4	[color=blue,
+		label="(not (i < len(left) and j < len(right)))",
+		label_bgcolor=white,
+		lp="257.26,281.27",
+		pos="e,152.19,247.41 183.76,317.72 173.89,312.69 165.03,305.98 158.51,297.02 150.51,286.03 148.98,272.09 150.39,258.58",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     83,65  <br/><br/></font>>,
+		xlp="125.4,296.73"];
+	5	[height=1.0852,
+		label="5. result.append(left[i])
+i += 1",
+		pos="213.01,62.817",
+		width=2.5387,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>96,53</font>>,
+		xlp="106.24,109.76"];
+	3 -> 5	[color=blue,
+		label="\"left[i] <= right[j]\"\nc[2]",
+		label_bgcolor=white,
+		lp="361.01,135.63",
+		pos="e,252.55,98.45 347.69,181.77 323.64,160.71 289.11,130.47 261.04,105.88",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     96,53  <br/><br/></font>>,
+		xlp="271.31,147.72"];
+	7	[height=1.0852,
+		label="7. result.append(right[j])
+j += 1",
+		pos="481.01,62.817",
+		width=2.686,
+		xlabel=<<br></br><br></br><br></br><font color='darkorange'>70,56</font>>,
+		xlp="368.93,109.76"];
+	3 -> 7	[color=blue,
+		label="\"(left[i] > right[j])\"\nc[3]",
+		label_bgcolor=white,
+		lp="490.38,135.63",
+		pos="e,454.34,100.64 396.32,180.77 410.74,160.86 430.79,133.17 447.77,109.72",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     70,56  <br/><br/></font>>,
+		xlp="396.79,148.64"];
+	5 -> 2	[color=blue,
+		label_bgcolor=white,
+		pos="e,168.57,319.25 146.92,90.298 113.51,107.47 76.093,133.42 57.006,169.38 40.726,200.06 39.402,217.59 57.006,247.52 78.22,283.59 118.12,\
+304.28 157.49,316.13",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     96,53  <br/><br/></font>>,
+		xlp="28.5,177.27"];
+	7 -> 2	[color=blue,
+		label_bgcolor=white,
+		pos="e,393.85,323.53 529.47,96.814 536.17,103.62 542.1,111.35 546.01,119.88 578.79,191.46 596.48,238.32 544.01,297.02 534.04,308.17 469.36,\
+316.7 405.01,322.55",
+		xlabel=<<font color='darkmagenta' style='background-color:white;'><br/><br/>     70,56  <br/><br/></font>>,
+		xlp="466.41,319.64"];
+}

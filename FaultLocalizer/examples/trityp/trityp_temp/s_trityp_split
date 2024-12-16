@@ -1,0 +1,93 @@
+digraph clustertrityp {
+	graph [label=trityp]
+	1 [label="c[22] += 1
+if i == 0 or j == 0 or k == 0:
+"]
+	2 [label="c[5] += 1
+type_code = display_type_code(3)
+"]
+	3 [label="return type_code
+"]
+	2 -> 3 [label=""]
+	1 -> 2 [label="i == 0 or j == 0 or k == 0"]
+	4 [label="c[6] += 1
+type_code = 0
+if i == j:
+"]
+	5 [label="c[7] += 1
+type_code = is_side_one_equal_two(type_code)
+"]
+	6 [label="if i == k:
+"]
+	7 [label="c[8] += 1
+type_code = is_side_one_equal_three(type_code)
+"]
+	8 [label="if j == k:
+"]
+	9 [label="c[9] += 1
+type_code = is_side_two_equal_three(type_code)
+"]
+	10 [label="if type_code == 0:
+"]
+	11 [label="c[10] += 1
+if i + j <= k or j + k <= i or i + k <= j:
+"]
+	26 [label="c[11] += 1
+type_code = display_type_code(4)
+"]
+	26 -> 3 [label=""]
+	11 -> 26 [label="i + j <= k or j + k <= i or i + k <= j"]
+	28 [label="c[12] += 1
+type_code = display_type_code(1)
+"]
+	28 -> 3 [label=""]
+	11 -> 28 [label="(not (i + j <= k or j + k <= i or i + k <= j))"]
+	10 -> 11 [label="type_code == 0"]
+	13 [label="if type_code > 3:
+"]
+	14 [label="c[13] += 1
+type_code = display_type_code(3)
+"]
+	14 -> 3 [label=""]
+	13 -> 14 [label="type_code > 3"]
+	16 [label="if type_code == 1 and i + j > k:
+"]
+	17 [label="c[14] += 1
+type_code = display_type_code(2)
+"]
+	17 -> 3 [label=""]
+	16 -> 17 [label="type_code == 1 and i + j > k"]
+	19 [label="if type_code == 2 and i + k > j:
+"]
+	20 [label="c[15] += 1
+type_code = display_type_code(2)
+"]
+	20 -> 3 [label=""]
+	19 -> 20 [label="type_code == 2 and i + k > j"]
+	22 [label="if type_code == 3 and j + k > i:
+"]
+	23 [label="c[16] += 1
+type_code = display_type_code(2)
+"]
+	23 -> 3 [label=""]
+	22 -> 23 [label="type_code == 3 and j + k > i"]
+	25 [label="c[17] += 1
+type_code = display_type_code(4)
+"]
+	25 -> 3 [label=""]
+	22 -> 25 [label="(not (type_code == 3 and j + k > i))"]
+	19 -> 22 [label="(not (type_code == 2 and i + k > j))"]
+	16 -> 19 [label="(not (type_code == 1 and i + j > k))"]
+	13 -> 16 [label="(type_code <= 3)"]
+	10 -> 13 [label="(type_code != 0)"]
+	9 -> 10 [label=""]
+	8 -> 9 [label="j == k"]
+	8 -> 10 [label="(j != k)"]
+	7 -> 8 [label=""]
+	6 -> 7 [label="i == k"]
+	6 -> 8 [label="(i != k)"]
+	5 -> 6 [label=""]
+	4 -> 5 [label="i == j"]
+	4 -> 6 [label="(i != j)"]
+	1 -> 4 [label="(not (i == 0 or j == 0 or k == 0))"]
+}

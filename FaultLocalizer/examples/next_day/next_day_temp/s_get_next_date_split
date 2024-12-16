@@ -1,0 +1,89 @@
+digraph clusterget_next_date {
+	graph [label=get_next_date]
+	1 [label="c[17] += 1
+if year % 400 == 0:
+"]
+	2 [label="c[1] += 1
+leap_year = True
+"]
+	3 [label="if month in (1, 3, 5, 7, 8, 10, 12):
+"]
+	11 [label="c[7] += 1
+month_length = 31
+"]
+	12 [label="if day < month_length:
+"]
+	20 [label="c[13] += 1
+day += 1
+"]
+	21 [label="return day, month, year
+"]
+	20 -> 21 [label=""]
+	12 -> 20 [label="day < month_length"]
+	22 [label="c[14] += 1
+day = 1
+if month == 12:
+"]
+	23 [label="c[15] += 1
+month = 1
+year += 1
+"]
+	23 -> 21 [label=""]
+	22 -> 23 [label="month == 12"]
+	25 [label="c[16] += 1
+month += 1
+"]
+	25 -> 21 [label=""]
+	22 -> 25 [label="(month != 12)"]
+	12 -> 22 [label="(day >= month_length)"]
+	11 -> 12 [label=""]
+	3 -> 11 [label="month in (1, 3, 5, 7, 8, 10, 12)"]
+	13 [label="c[8] += 1
+if month == 2:
+"]
+	14 [label="c[9] += 1
+if leap_year:
+"]
+	17 [label="c[10] += 1
+month_length = 29
+"]
+	17 -> 12 [label=""]
+	14 -> 17 [label=leap_year]
+	19 [label="c[11] += 1
+month_length = 5
+"]
+	19 -> 12 [label=""]
+	14 -> 19 [label="(not leap_year)"]
+	13 -> 14 [label="month == 2"]
+	16 [label="c[12] += 1
+month_length = 30
+"]
+	16 -> 12 [label=""]
+	13 -> 16 [label="(month != 2)"]
+	3 -> 13 [label="(month not in (1, 3, 5, 7, 8, 10, 12))"]
+	2 -> 3 [label=""]
+	1 -> 2 [label="year % 400 == 0"]
+	4 [label="c[2] += 1
+if year % 100 == 0:
+"]
+	5 [label="c[3] += 1
+leap_year = False
+"]
+	5 -> 3 [label=""]
+	4 -> 5 [label="year % 100 == 0"]
+	7 [label="c[4] += 1
+if year % 4 == 0:
+"]
+	8 [label="c[5] += 1
+leap_year = True
+"]
+	8 -> 3 [label=""]
+	7 -> 8 [label="year % 4 == 0"]
+	10 [label="c[6] += 1
+leap_year = False
+"]
+	10 -> 3 [label=""]
+	7 -> 10 [label="(year % 4 != 0)"]
+	4 -> 7 [label="(year % 100 != 0)"]
+	1 -> 4 [label="(year % 400 != 0)"]
+}

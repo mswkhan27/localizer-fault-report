@@ -1,0 +1,24 @@
+digraph clusterdisplay_type_code {
+	graph [bb="0,0,122.5,187.22",
+		label=display_type_code,
+		lheight=0.22,
+		lp="61.25,11.875",
+		lwidth=1.48
+	];
+	node [label="\N"];
+	1	[height=0.77585,
+		label="c[18] += 1
+if n:
+",
+		pos="61.25,159.29",
+		width=1.4928];
+	2	[height=0.77585,
+		label="c[1] += 1
+return n
+",
+		pos="61.25,51.681",
+		width=1.3602];
+	1 -> 2	[label=n,
+		lp="64.625,105.49",
+		pos="e,61.25,79.786 61.25,131.09 61.25,118.9 61.25,104.3 61.25,91.021"];
+}
